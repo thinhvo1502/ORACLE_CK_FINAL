@@ -634,3 +634,7 @@ Exception: System.InvalidCastException: Column contains NULL data
    at ORCLE_CK.Services.QuizService.GetQuizQuestions(Int32 quizId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\QuizService.cs:line 92
 [2025-05-28 17:21:41] [INFO] Application exiting
 [2025-05-28 17:21:41] [INFO] Application closing...
+[2025-05-28 23:58:40] [INFO] Database connection configuration loaded successfully
+[2025-05-28 23:58:43] [INFO] User tranbinh authenticated successfully
+[2025-05-28 23:58:43] [INFO] User tranbinh logged in successfully
+[2025-05-28 23:58:43] [INFO] User tranbinh logged in successfully

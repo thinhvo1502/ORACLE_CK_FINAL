@@ -15,6 +15,6 @@ namespace ORCLE_CK.Data.Repositories
         bool UpdateAssignment(Assignment assignment);
         bool DeleteAssignment(int assignmentId);
         List<Submission> GetSubmissionsByAssignment(int assignmentId);
-        bool GradeSubmission(int submissionId, int score, string feedback);
+        bool GradeSubmission(int submissionId, decimal score, string feedback);
     }
 }

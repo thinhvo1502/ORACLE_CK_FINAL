@@ -31,151 +31,71 @@ namespace ORCLE_CK.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.summaryPanel = new Panel();
-            this.detailPanel = new Panel();
-            this.progressListView = new ListView();
-            this.lblTotalCourses = new Label();
-            this.lblCompletedCourses = new Label();
-            this.lblAverageProgress = new Label();
-            this.lblTotalHours = new Label();
-            this.overallProgressBar = new ProgressBar();
-            this.cmbCourseFilter = new ComboBox();
-            this.btnRefresh = new Button();
-            this.btnViewCertificate = new Button();
+            this.lblStudentName = new Label();
+            this.lblCourseTitle = new Label();
+            this.lblEnrollmentDate = new Label();
+            this.lblProgress = new Label();
+            this.lblCompletedLessons = new Label();
+            this.lblAverageGrade = new Label();
+            this.progressBar = new ProgressBar();
+            this.btnClose = new Button();
 
             this.SuspendLayout();
 
             // Form
-            this.Text = $"Tiến độ học tập - {currentUser.FullName}";
-            this.Size = new Size(1000, 700);
+            this.Text = "Chi tiết tiến độ học viên";
+            this.Size = new Size(500, 400);
             this.StartPosition = FormStartPosition.CenterParent;
-            this.BackColor = Color.WhiteSmoke;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
 
-            // Summary Panel
-            this.summaryPanel.Location = new Point(20, 20);
-            this.summaryPanel.Size = new Size(940, 150);
-            this.summaryPanel.BackColor = Color.White;
-            this.summaryPanel.BorderStyle = BorderStyle.FixedSingle;
-            this.summaryPanel.Padding = new Padding(20);
+            // Labels
+            int startY = 20;
+            int labelHeight = 30;
+            int spacing = 10;
 
-            var lblSummaryTitle = new Label
-            {
-                Text = "Tổng quan tiến độ học tập",
-                Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold),
-                ForeColor = Color.DarkBlue,
-                Location = new Point(0, 0),
-                Size = new Size(300, 25)
-            };
+            this.lblStudentName.Location = new Point(20, startY);
+            this.lblStudentName.Size = new Size(440, labelHeight);
+            this.lblStudentName.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
 
-            // Statistics
-            this.lblTotalCourses.Location = new Point(0, 35);
-            this.lblTotalCourses.Size = new Size(200, 20);
-            this.lblTotalCourses.Font = new Font("Microsoft Sans Serif", 10F);
+            this.lblCourseTitle.Location = new Point(20, startY + (labelHeight + spacing));
+            this.lblCourseTitle.Size = new Size(440, labelHeight);
 
-            this.lblCompletedCourses.Location = new Point(220, 35);
-            this.lblCompletedCourses.Size = new Size(200, 20);
-            this.lblCompletedCourses.Font = new Font("Microsoft Sans Serif", 10F);
+            this.lblEnrollmentDate.Location = new Point(20, startY + (labelHeight + spacing) * 2);
+            this.lblEnrollmentDate.Size = new Size(440, labelHeight);
 
-            this.lblAverageProgress.Location = new Point(440, 35);
-            this.lblAverageProgress.Size = new Size(200, 20);
-            this.lblAverageProgress.Font = new Font("Microsoft Sans Serif", 10F);
+            this.lblProgress.Location = new Point(20, startY + (labelHeight + spacing) * 3);
+            this.lblProgress.Size = new Size(440, labelHeight);
 
-            this.lblTotalHours.Location = new Point(660, 35);
-            this.lblTotalHours.Size = new Size(200, 20);
-            this.lblTotalHours.Font = new Font("Microsoft Sans Serif", 10F);
+            // Progress Bar
+            this.progressBar.Location = new Point(20, startY + (labelHeight + spacing) * 4);
+            this.progressBar.Size = new Size(440, 25);
+            this.progressBar.Maximum = 100;
 
-            // Overall Progress Bar
-            var lblOverallProgress = new Label
-            {
-                Text = "Tiến độ tổng thể:",
-                Location = new Point(0, 70),
-                Size = new Size(150, 20),
-                Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold)
-            };
+            this.lblCompletedLessons.Location = new Point(20, startY + (labelHeight + spacing) * 5);
+            this.lblCompletedLessons.Size = new Size(440, labelHeight);
 
-            this.overallProgressBar.Location = new Point(160, 70);
-            this.overallProgressBar.Size = new Size(400, 25);
-            this.overallProgressBar.Style = ProgressBarStyle.Continuous;
+            this.lblAverageGrade.Location = new Point(20, startY + (labelHeight + spacing) * 6);
+            this.lblAverageGrade.Size = new Size(440, labelHeight);
 
-            // Action Buttons
-            this.btnRefresh.Text = "Làm mới";
-            this.btnRefresh.Location = new Point(0, 105);
-            this.btnRefresh.Size = new Size(100, 30);
-            this.btnRefresh.BackColor = Color.Blue;
-            this.btnRefresh.ForeColor = Color.White;
-            this.btnRefresh.Click += BtnRefresh_Click;
+            // Close button
+            this.btnClose.Text = "Đóng";
+            this.btnClose.Location = new Point(200, startY + (labelHeight + spacing) * 7);
+            this.btnClose.Size = new Size(100, 35);
+            this.btnClose.BackColor = Color.Gray;
+            this.btnClose.ForeColor = Color.White;
+            this.btnClose.Click += BtnClose_Click;
 
-            this.btnViewCertificate.Text = "Xem chứng chỉ";
-            this.btnViewCertificate.Location = new Point(120, 105);
-            this.btnViewCertificate.Size = new Size(120, 30);
-            this.btnViewCertificate.BackColor = Color.Orange;
-            this.btnViewCertificate.ForeColor = Color.White;
-            this.btnViewCertificate.Click += BtnViewCertificate_Click;
-
-            this.summaryPanel.Controls.Add(lblSummaryTitle);
-            this.summaryPanel.Controls.Add(this.lblTotalCourses);
-            this.summaryPanel.Controls.Add(this.lblCompletedCourses);
-            this.summaryPanel.Controls.Add(this.lblAverageProgress);
-            this.summaryPanel.Controls.Add(this.lblTotalHours);
-            this.summaryPanel.Controls.Add(lblOverallProgress);
-            this.summaryPanel.Controls.Add(this.overallProgressBar);
-            this.summaryPanel.Controls.Add(this.btnRefresh);
-            this.summaryPanel.Controls.Add(this.btnViewCertificate);
-
-            // Detail Panel
-            this.detailPanel.Location = new Point(20, 190);
-            this.detailPanel.Size = new Size(940, 450);
-            this.detailPanel.BackColor = Color.White;
-            this.detailPanel.BorderStyle = BorderStyle.FixedSingle;
-
-            var lblDetailTitle = new Label
-            {
-                Text = "Chi tiết tiến độ từng khóa học",
-                Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold),
-                ForeColor = Color.DarkBlue,
-                Location = new Point(20, 10),
-                Size = new Size(300, 25)
-            };
-
-            // Filter
-            var lblFilter = new Label
-            {
-                Text = "Lọc:",
-                Location = new Point(20, 45),
-                Size = new Size(50, 20)
-            };
-
-            this.cmbCourseFilter.Location = new Point(80, 42);
-            this.cmbCourseFilter.Size = new Size(200, 23);
-            this.cmbCourseFilter.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cmbCourseFilter.Items.AddRange(new[] { "Tất cả", "Đang học", "Hoàn thành", "Chưa bắt đầu" });
-            this.cmbCourseFilter.SelectedIndex = 0;
-            this.cmbCourseFilter.SelectedIndexChanged += CmbCourseFilter_SelectedIndexChanged;
-
-            // Progress ListView
-            this.progressListView.Location = new Point(20, 75);
-            this.progressListView.Size = new Size(900, 350);
-            this.progressListView.View = View.Details;
-            this.progressListView.FullRowSelect = true;
-            this.progressListView.GridLines = true;
-            this.progressListView.Font = new Font("Microsoft Sans Serif", 9F);
-
-            this.progressListView.Columns.Add("Khóa học", 250);
-            this.progressListView.Columns.Add("Giảng viên", 150);
-            this.progressListView.Columns.Add("Ngày đăng ký", 120);
-            this.progressListView.Columns.Add("Tiến độ", 100);
-            this.progressListView.Columns.Add("Điểm", 80);
-            this.progressListView.Columns.Add("Trạng thái", 100);
-            this.progressListView.Columns.Add("Hoàn thành", 120);
-
-            this.detailPanel.Controls.Add(lblDetailTitle);
-            this.detailPanel.Controls.Add(lblFilter);
-            this.detailPanel.Controls.Add(this.cmbCourseFilter);
-            this.detailPanel.Controls.Add(this.progressListView);
-
-            // Add panels to form
-            this.Controls.Add(this.summaryPanel);
-            this.Controls.Add(this.detailPanel);
+            // Add controls
+            this.Controls.Add(this.lblStudentName);
+            this.Controls.Add(this.lblCourseTitle);
+            this.Controls.Add(this.lblEnrollmentDate);
+            this.Controls.Add(this.lblProgress);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.lblCompletedLessons);
+            this.Controls.Add(this.lblAverageGrade);
+            this.Controls.Add(this.btnClose);
 
             this.ResumeLayout(false);
         }

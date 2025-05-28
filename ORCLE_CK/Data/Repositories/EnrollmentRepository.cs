@@ -265,5 +265,18 @@ namespace ORCLE_CK.Data.Repositories
 
             return enrollments;
         }
+
+        public bool Delete(int enrollmentId)
+        {
+            using var connection = DatabaseConnection.GetConnection();
+            connection.Open();
+
+            var query = "DELETE FROM enrollments WHERE enrollment_id = :enrollmentId";
+
+            using var command = new OracleCommand(query, connection);
+            command.Parameters.Add(":enrollmentId", enrollmentId);
+
+            return command.ExecuteNonQuery() > 0;
+        }
     }
 }

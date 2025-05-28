@@ -121,8 +121,8 @@ namespace ORCLE_CK.Forms
 
         private void BtnViewProgress_Click(object sender, EventArgs e)
         {
-            using var progressForm = new StudentProgressForm(currentUser);
-            progressForm.ShowDialog();
+            //using var progressForm = new StudentProgressForm(currentUser);
+            //progressForm.ShowDialog();
         }
 
         private void RecentCoursesListView_DoubleClick(object sender, EventArgs e)

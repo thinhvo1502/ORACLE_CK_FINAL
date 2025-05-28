@@ -16,8 +16,8 @@ namespace ORCLE_CK.Forms
         private readonly Submission submission;
 
         private Label lblStudentInfo;
-        private TextBox txtContent;
-        private Label lblScoreInfo;
+        private TextBox txtFileUrl;
+        private Label lblGradeInfo;
         private TextBox txtFeedback;
         private Button btnClose;
 
@@ -28,8 +28,6 @@ namespace ORCLE_CK.Forms
             LoadSubmissionData();
         }
 
-        
-
         private void LoadSubmissionData()
         {
             lblStudentInfo.Text = $"Học viên: {submission.StudentName}\n" +
@@ -37,17 +35,17 @@ namespace ORCLE_CK.Forms
                                  $"Khóa học: {submission.CourseName}\n" +
                                  $"Thời gian nộp: {submission.SubmittedAt:dd/MM/yyyy HH:mm}";
 
-            txtContent.Text = submission.Content ?? "Không có nội dung";
+            txtFileUrl.Text = submission.FileUrl ?? "Không có file đính kèm";
 
-            if (submission.Score.HasValue)
+            if (submission.Grade.HasValue)
             {
-                lblScoreInfo.Text = $"Điểm: {submission.Score}/{submission.MaxScore} - Trạng thái: {submission.Status}";
-                lblScoreInfo.ForeColor = submission.Score >= submission.MaxScore * 0.7 ? Color.Green : Color.Red;
+                lblGradeInfo.Text = $"Điểm: {submission.Grade:F2}/{submission.MaxScore} - Trạng thái: {submission.Status}";
+                lblGradeInfo.ForeColor = submission.Grade >= submission.MaxScore * 0.7m ? Color.Green : Color.Red;
             }
             else
             {
-                lblScoreInfo.Text = "Chưa được chấm điểm";
-                lblScoreInfo.ForeColor = Color.Orange;
+                lblGradeInfo.Text = "Chưa được chấm điểm";
+                lblGradeInfo.ForeColor = Color.Orange;
             }
 
             txtFeedback.Text = submission.Feedback ?? "Chưa có phản hồi";

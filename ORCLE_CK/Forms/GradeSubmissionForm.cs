@@ -18,8 +18,8 @@ namespace ORCLE_CK.Forms
         private readonly Submission submission;
 
         private Label lblStudentInfo;
-        private TextBox txtContent;
-        private NumericUpDown numScore;
+        private TextBox txtFileUrl;
+        private NumericUpDown numGrade;
         private TextBox txtFeedback;
         private Button btnSave;
         private Button btnCancel;
@@ -32,20 +32,19 @@ namespace ORCLE_CK.Forms
             LoadSubmissionData();
         }
 
-        
-
         private void LoadSubmissionData()
         {
             lblStudentInfo.Text = $"Học viên: {submission.StudentName}\n" +
                                  $"Bài tập: {submission.AssignmentTitle}\n" +
                                  $"Thời gian nộp: {submission.SubmittedAt:dd/MM/yyyy HH:mm}";
 
-            txtContent.Text = submission.Content ?? "Không có nội dung";
-            numScore.Maximum = submission.MaxScore;
+            txtFileUrl.Text = submission.FileUrl ?? "Không có file đính kèm";
+            numGrade.Maximum = submission.MaxScore;
+            numGrade.DecimalPlaces = 2;
 
-            if (submission.Score.HasValue)
+            if (submission.Grade.HasValue)
             {
-                numScore.Value = submission.Score.Value;
+                numGrade.Value = (decimal)submission.Grade.Value;
                 txtFeedback.Text = submission.Feedback ?? "";
             }
         }
@@ -54,10 +53,10 @@ namespace ORCLE_CK.Forms
         {
             try
             {
-                int score = (int)numScore.Value;
+                decimal grade = numGrade.Value;
                 string feedback = txtFeedback.Text.Trim();
 
-                if (assignmentService.GradeSubmission(submission.SubmissionId, score, feedback))
+                if (assignmentService.GradeSubmission(submission.SubmissionId, grade, feedback))
                 {
                     MessageBox.Show("Chấm điểm thành công!", "Thông báo",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);

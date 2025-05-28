@@ -16,5 +16,6 @@ namespace ORCLE_CK.Data.Repositories
         bool UpdateProgress(int studentId, int courseId, decimal progress);
         Enrollment GetByStudentAndCourse(int studentId, int courseId);
         List<Enrollment> GetByCourseId(int courseId);
+        bool Delete(int enrollmentId);
     }
 }

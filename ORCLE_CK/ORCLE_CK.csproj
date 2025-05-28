@@ -81,6 +81,12 @@
     <Compile Include="Forms\AddQuizQuestionForm.Designer.cs">
       <DependentUpon>AddQuizQuestionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddStudentToCourseFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudentToCourseFor.Designer.cs">
+      <DependentUpon>AddStudentToCourseFor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AssignmentManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,12 @@
     </Compile>
     <Compile Include="Forms\QuizQuestionManagementForm.Designer.cs">
       <DependentUpon>QuizQuestionManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuizResultDetailFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuizResultDetailFor.Designer.cs">
+      <DependentUpon>QuizResultDetailFor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QuizResultManagementForm.cs">
       <SubType>Form</SubType>

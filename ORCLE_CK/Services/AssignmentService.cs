@@ -112,11 +112,14 @@ namespace ORCLE_CK.Services
             }
         }
 
-        public bool GradeSubmission(int submissionId, int score, string feedback)
+        public bool GradeSubmission(int submissionId, decimal grade, string feedback)
         {
+            if (grade < 0 || grade > 100)
+                throw new ValidationException("Điểm số phải nằm trong khoảng từ 0 đến 100");
+
             try
             {
-                return assignmentRepository.GradeSubmission(submissionId, score, feedback);
+                return assignmentRepository.GradeSubmission(submissionId, grade, feedback);
             }
             catch (Exception ex)
             {

@@ -44,12 +44,25 @@ namespace ORCLE_CK.Services
             }
         }
 
+        public bool IsEnrolled(int studentId, int courseId)
+        {
+            try
+            {
+                return enrollmentRepository.IsEnrolled(studentId, courseId);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error checking enrollment status for student {studentId} in course {courseId}: {ex.Message}", ex);
+                throw;
+            }
+        }
+
         public bool EnrollStudent(int studentId, int courseId)
         {
             try
             {
                 // Check if already enrolled
-                if (enrollmentRepository.IsEnrolled(studentId, courseId))
+                if (IsEnrolled(studentId, courseId))
                 {
                     return false;
                 }
@@ -94,6 +107,32 @@ namespace ORCLE_CK.Services
             catch (Exception ex)
             {
                 Logger.LogError($"Error getting enrollment for student {studentId} and course {courseId}: {ex.Message}", ex);
+                throw;
+            }
+        }
+
+        public List<Enrollment> GetEnrollmentsByCourse(int courseId)
+        {
+            try
+            {
+                return enrollmentRepository.GetByCourseId(courseId);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error getting enrollments for course {courseId}: {ex.Message}", ex);
+                throw;
+            }
+        }
+
+        public bool RemoveStudentFromCourse(int enrollmentId)
+        {
+            try
+            {
+                return enrollmentRepository.Delete(enrollmentId);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error removing student from course: {ex.Message}", ex);
                 throw;
             }
         }

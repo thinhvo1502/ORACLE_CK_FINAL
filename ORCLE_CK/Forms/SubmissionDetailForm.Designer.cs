@@ -32,8 +32,8 @@ namespace ORCLE_CK.Forms
         private void InitializeComponent()
         {
             this.lblStudentInfo = new Label();
-            this.txtContent = new TextBox();
-            this.lblScoreInfo = new Label();
+            this.txtFileUrl = new TextBox();
+            this.lblGradeInfo = new Label();
             this.txtFeedback = new TextBox();
             this.btnClose = new Button();
 
@@ -52,19 +52,19 @@ namespace ORCLE_CK.Forms
             this.lblStudentInfo.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             this.lblStudentInfo.ForeColor = Color.Blue;
 
-            // Content
-            var lblContent = new Label { Text = "Nội dung bài nộp:", Location = new Point(20, 100), Size = new Size(150, 23) };
-            this.txtContent.Location = new Point(20, 130);
-            this.txtContent.Size = new Size(640, 250);
-            this.txtContent.Multiline = true;
-            this.txtContent.ScrollBars = ScrollBars.Vertical;
-            this.txtContent.ReadOnly = true;
-            this.txtContent.BackColor = Color.LightGray;
+            // File URL
+            var lblFileUrl = new Label { Text = "File đính kèm:", Location = new Point(20, 100), Size = new Size(150, 23) };
+            this.txtFileUrl.Location = new Point(20, 130);
+            this.txtFileUrl.Size = new Size(640, 250);
+            this.txtFileUrl.Multiline = true;
+            this.txtFileUrl.ScrollBars = ScrollBars.Vertical;
+            this.txtFileUrl.ReadOnly = true;
+            this.txtFileUrl.BackColor = Color.LightGray;
 
-            // Score Info
-            this.lblScoreInfo.Location = new Point(20, 400);
-            this.lblScoreInfo.Size = new Size(640, 23);
-            this.lblScoreInfo.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
+            // Grade Info
+            this.lblGradeInfo.Location = new Point(20, 400);
+            this.lblGradeInfo.Size = new Size(640, 23);
+            this.lblGradeInfo.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
 
             // Feedback
             var lblFeedback = new Label { Text = "Phản hồi từ giảng viên:", Location = new Point(20, 440), Size = new Size(150, 23) };
@@ -85,9 +85,9 @@ namespace ORCLE_CK.Forms
 
             // Add controls
             this.Controls.Add(this.lblStudentInfo);
-            this.Controls.Add(lblContent);
-            this.Controls.Add(this.txtContent);
-            this.Controls.Add(this.lblScoreInfo);
+            this.Controls.Add(lblFileUrl);
+            this.Controls.Add(this.txtFileUrl);
+            this.Controls.Add(this.lblGradeInfo);
             this.Controls.Add(lblFeedback);
             this.Controls.Add(this.txtFeedback);
             this.Controls.Add(this.btnClose);

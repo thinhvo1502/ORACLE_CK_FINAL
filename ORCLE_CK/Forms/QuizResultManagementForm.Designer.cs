@@ -34,6 +34,8 @@ namespace ORCLE_CK.Forms
             this.listViewResults = new ListView();
             this.btnRefresh = new Button();
             this.btnViewDetail = new Button();
+            this.statusStrip = new StatusStrip();
+            this.statusLabel = new ToolStripStatusLabel();
 
             this.SuspendLayout();
 
@@ -49,6 +51,7 @@ namespace ORCLE_CK.Forms
             this.btnViewDetail.BackColor = Color.Blue;
             this.btnViewDetail.ForeColor = Color.White;
             this.btnViewDetail.Click += BtnViewDetail_Click;
+            this.btnViewDetail.Enabled = false;
 
             this.btnRefresh.Text = "Làm mới";
             this.btnRefresh.Location = new Point(130, 20);
@@ -64,6 +67,8 @@ namespace ORCLE_CK.Forms
             this.listViewResults.FullRowSelect = true;
             this.listViewResults.GridLines = true;
             this.listViewResults.MultiSelect = false;
+            this.listViewResults.SelectedIndexChanged += ListView_SelectedIndexChanged;
+            this.listViewResults.DoubleClick += ListView_DoubleClick;
 
             this.listViewResults.Columns.Add("Học viên", 200);
             this.listViewResults.Columns.Add("Điểm", 80);
@@ -73,12 +78,19 @@ namespace ORCLE_CK.Forms
             this.listViewResults.Columns.Add("Ngày làm", 150);
             this.listViewResults.Columns.Add("Trạng thái", 100);
 
+            // Status Strip
+            this.statusStrip.Items.Add(this.statusLabel);
+            this.statusStrip.SizingGrip = false;
+            this.statusLabel.Text = "Sẵn sàng";
+
             // Add controls
             this.Controls.Add(this.btnViewDetail);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.listViewResults);
+            this.Controls.Add(this.statusStrip);
 
             this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion

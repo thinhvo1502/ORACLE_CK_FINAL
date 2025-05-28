@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ORCLE_CK.Data.Repositories
 {
@@ -196,14 +197,14 @@ namespace ORCLE_CK.Data.Repositories
                 {
                     connection.Open();
 
-                    string sql = @"SELECT s.submission_id, s.assignment_id, s.student_id, s.content, s.file_path,
-                                  s.submitted_at, s.graded_at, s.score, s.feedback, s.status,
+                    string sql = @"SELECT s.submission_id, s.assignment_id, s.user_id, s.file_url,
+                                  s.submitted_at, s.grade, s.feedback, s.status,
                                   a.title as assignment_title, a.max_score,
                                   u.full_name as student_name,
                                   c.title as course_name
                                   FROM Submissions s
                                   LEFT JOIN Assignments a ON s.assignment_id = a.assignment_id
-                                  LEFT JOIN Users u ON s.student_id = u.user_id
+                                  LEFT JOIN Users u ON s.user_id = u.user_id
                                   LEFT JOIN Courses c ON a.course_id = c.course_id
                                   WHERE s.assignment_id = :assignmentId
                                   ORDER BY s.submitted_at DESC";
@@ -231,7 +232,7 @@ namespace ORCLE_CK.Data.Repositories
             return submissions;
         }
 
-        public bool GradeSubmission(int submissionId, int score, string feedback)
+        public bool GradeSubmission(int submissionId, decimal grade, string feedback)
         {
             try
             {
@@ -239,13 +240,13 @@ namespace ORCLE_CK.Data.Repositories
                 {
                     connection.Open();
 
-                    string sql = @"UPDATE Submissions SET score = :score, feedback = :feedback, 
-                                  graded_at = SYSDATE, status = 'Graded' 
+                    string sql = @"UPDATE Submissions SET grade = :grade, feedback = :feedback, 
+                                  status = 'graded' 
                                   WHERE submission_id = :submissionId";
 
                     using (var command = DatabaseConnection.CreateCommand(sql, connection))
                     {
-                        command.Parameters.Add(":score", OracleDbType.Int32).Value = score;
+                        command.Parameters.Add(":grade", OracleDbType.Decimal).Value = grade;
                         command.Parameters.Add(":feedback", OracleDbType.NClob).Value = feedback ?? (object)DBNull.Value;
                         command.Parameters.Add(":submissionId", OracleDbType.Int32).Value = submissionId;
 
@@ -286,14 +287,12 @@ namespace ORCLE_CK.Data.Repositories
             {
                 SubmissionId = Convert.ToInt32(reader["submission_id"]),
                 AssignmentId = Convert.ToInt32(reader["assignment_id"]),
-                StudentId = Convert.ToInt32(reader["student_id"]),
-                Content = reader["content"]?.ToString(),
-                FilePath = reader["file_path"]?.ToString(),
+                UserId = Convert.ToInt32(reader["user_id"]),
+                FileUrl = reader["file_url"]?.ToString(),
                 SubmittedAt = Convert.ToDateTime(reader["submitted_at"]),
-                GradedAt = reader["graded_at"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(reader["graded_at"]),
-                Score = reader["score"] == DBNull.Value ? (int?)null : Convert.ToInt32(reader["score"]),
+                Grade = reader["grade"] == DBNull.Value ? (decimal?)null : Convert.ToDecimal(reader["grade"]),
                 Feedback = reader["feedback"]?.ToString(),
-                Status = reader["status"]?.ToString() ?? "Submitted",
+                Status = reader["status"]?.ToString() ?? "submitted",
                 AssignmentTitle = reader["assignment_title"]?.ToString() ?? string.Empty,
                 StudentName = reader["student_name"]?.ToString() ?? string.Empty,
                 CourseName = reader["course_name"]?.ToString() ?? string.Empty,

@@ -32,8 +32,8 @@ namespace ORCLE_CK.Forms
         private void InitializeComponent()
         {
             this.lblStudentInfo = new Label();
-            this.txtContent = new TextBox();
-            this.numScore = new NumericUpDown();
+            this.txtFileUrl = new TextBox();
+            this.numGrade = new NumericUpDown();
             this.txtFeedback = new TextBox();
             this.btnSave = new Button();
             this.btnCancel = new Button();
@@ -53,21 +53,22 @@ namespace ORCLE_CK.Forms
             this.lblStudentInfo.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             this.lblStudentInfo.ForeColor = Color.Blue;
 
-            // Content
-            var lblContent = new Label { Text = "Nội dung bài nộp:", Location = new Point(20, 80), Size = new Size(150, 23) };
-            this.txtContent.Location = new Point(20, 110);
-            this.txtContent.Size = new Size(540, 200);
-            this.txtContent.Multiline = true;
-            this.txtContent.ScrollBars = ScrollBars.Vertical;
-            this.txtContent.ReadOnly = true;
-            this.txtContent.BackColor = Color.LightGray;
+            // File URL
+            var lblFileUrl = new Label { Text = "File đính kèm:", Location = new Point(20, 80), Size = new Size(150, 23) };
+            this.txtFileUrl.Location = new Point(20, 110);
+            this.txtFileUrl.Size = new Size(540, 200);
+            this.txtFileUrl.Multiline = true;
+            this.txtFileUrl.ScrollBars = ScrollBars.Vertical;
+            this.txtFileUrl.ReadOnly = true;
+            this.txtFileUrl.BackColor = Color.LightGray;
 
-            // Score
-            var lblScore = new Label { Text = "Điểm:", Location = new Point(20, 330), Size = new Size(100, 23) };
-            this.numScore.Location = new Point(130, 330);
-            this.numScore.Size = new Size(80, 23);
-            this.numScore.Minimum = 0;
-            this.numScore.DecimalPlaces = 1;
+            // Grade
+            var lblGrade = new Label { Text = "Điểm:", Location = new Point(20, 330), Size = new Size(100, 23) };
+            this.numGrade.Location = new Point(130, 330);
+            this.numGrade.Size = new Size(80, 23);
+            this.numGrade.Minimum = 0;
+            this.numGrade.DecimalPlaces = 2;
+            this.numGrade.Increment = 0.5M;
 
             var lblMaxScore = new Label();
             lblMaxScore.Location = new Point(220, 330);
@@ -80,7 +81,6 @@ namespace ORCLE_CK.Forms
             this.txtFeedback.Size = new Size(540, 100);
             this.txtFeedback.Multiline = true;
             this.txtFeedback.ScrollBars = ScrollBars.Vertical;
-            //this.txtFeedback.PlaceholderText = "Nhập phản hồi cho học viên...";
 
             // Buttons
             this.btnSave.Text = "Lưu điểm";
@@ -99,10 +99,10 @@ namespace ORCLE_CK.Forms
 
             // Add controls
             this.Controls.Add(this.lblStudentInfo);
-            this.Controls.Add(lblContent);
-            this.Controls.Add(this.txtContent);
-            this.Controls.Add(lblScore);
-            this.Controls.Add(this.numScore);
+            this.Controls.Add(lblFileUrl);
+            this.Controls.Add(this.txtFileUrl);
+            this.Controls.Add(lblGrade);
+            this.Controls.Add(this.numGrade);
             this.Controls.Add(lblMaxScore);
             this.Controls.Add(lblFeedback);
             this.Controls.Add(this.txtFeedback);

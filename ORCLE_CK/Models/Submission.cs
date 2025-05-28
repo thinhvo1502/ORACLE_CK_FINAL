@@ -15,21 +15,17 @@ namespace ORCLE_CK.Models
         public int AssignmentId { get; set; }
 
         [Required]
-        public int StudentId { get; set; }
+        public int UserId { get; set; }
 
-        public string? Content { get; set; }
-
-        public string? FilePath { get; set; }
+        public string? FileUrl { get; set; }
 
         public DateTime SubmittedAt { get; set; }
 
-        public DateTime? GradedAt { get; set; }
-
-        public int? Score { get; set; }
+        public decimal? Grade { get; set; }
 
         public string? Feedback { get; set; }
 
-        public string Status { get; set; } = "Submitted"; // Submitted, Graded, Late
+        public string Status { get; set; } = "submitted"; // submitted, graded, returned
 
         // Navigation properties
         public string AssignmentTitle { get; set; } = string.Empty;

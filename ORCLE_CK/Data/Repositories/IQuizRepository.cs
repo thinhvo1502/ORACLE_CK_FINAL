@@ -23,6 +23,8 @@ namespace ORCLE_CK.Data.Repositories
 
         List<QuizResult> GetQuizResults(int quizId);
         QuizResult GetQuizResultById(int resultId);
+        QuizResult GetQuizResultDetail(int resultId);
         List<QuizResult> GetUserQuizResults(int userId);
+        bool SaveQuizResult(QuizResult result);
     }
 }

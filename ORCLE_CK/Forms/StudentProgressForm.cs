@@ -16,107 +16,65 @@ namespace ORCLE_CK.Forms
 {
     public partial class StudentProgressForm : Form
     {
-        private readonly User currentUser;
+        private readonly Enrollment enrollment;
         private readonly EnrollmentService enrollmentService;
+        private readonly QuizService quizService;
 
-        private Panel summaryPanel, detailPanel;
-        private ListView progressListView;
-        private Label lblTotalCourses, lblCompletedCourses, lblAverageProgress, lblTotalHours;
-        private ProgressBar overallProgressBar;
-        private ComboBox cmbCourseFilter;
-        private Button btnRefresh, btnViewCertificate;
+        private Label lblStudentName, lblCourseTitle, lblEnrollmentDate;
+        private Label lblProgress, lblCompletedLessons, lblAverageGrade;
+        private ProgressBar progressBar;
+        private Button btnClose;
 
-        public StudentProgressForm(User user)
+        public StudentProgressForm(Enrollment enrollment)
         {
-            currentUser = user ?? throw new ArgumentNullException(nameof(user));
+            this.enrollment = enrollment ?? throw new ArgumentNullException(nameof(enrollment));
             enrollmentService = new EnrollmentService();
+            quizService = new QuizService();
             InitializeComponent();
-            LoadProgressData();
+            LoadProgressDetails();
         }
-        private void LoadProgressData()
+
+        private void LoadProgressDetails()
         {
             try
             {
-                var enrollments = enrollmentService.GetEnrollmentsByStudent(currentUser.UserId);
+                lblStudentName.Text = $"Học viên: {enrollment.StudentName}";
+                lblCourseTitle.Text = $"Khóa học: {enrollment.CourseTitle}";
+                lblEnrollmentDate.Text = $"Ngày đăng ký: {enrollment.EnrolledAt:dd/MM/yyyy}";
+                lblProgress.Text = $"Tiến độ: {enrollment.Progress:F1}%";
+                //lblCompletedLessons.Text = $"Bài học đã hoàn thành: {enrollment.CompletedLessons}/{enrollment.TotalLessons}";
+                //lblAverageGrade.Text = $"Điểm trung bình: {enrollment.AverageGrade:F1}";
 
-                // Update summary statistics
-                var totalCourses = enrollments.Count;
-                var completedCourses = enrollments.Count(e => e.Progress >= 100);
-                var averageProgress = enrollments.Count > 0 ? enrollments.Average(e => e.Progress) : 0;
-                var totalHours = enrollments.Sum(e => 0); // TODO: Calculate actual hours
+                progressBar.Value = (int)enrollment.Progress;
 
-                lblTotalCourses.Text = $"Tổng khóa học: {totalCourses}";
-                lblCompletedCourses.Text = $"Đã hoàn thành: {completedCourses}";
-                lblAverageProgress.Text = $"Tiến độ TB: {averageProgress:F1}%";
-                lblTotalHours.Text = $"Tổng giờ học: {totalHours}h";
-
-                overallProgressBar.Value = (int)Math.Min(averageProgress, 100);
-
-                // Load detailed progress
-                LoadDetailedProgress(enrollments);
+                // Set color based on progress
+                if (enrollment.Progress >= 70)
+                {
+                    progressBar.ForeColor = Color.Green;
+                    lblProgress.ForeColor = Color.Green;
+                }
+                else if (enrollment.Progress >= 50)
+                {
+                    progressBar.ForeColor = Color.Orange;
+                    lblProgress.ForeColor = Color.Orange;
+                }
+                else
+                {
+                    progressBar.ForeColor = Color.Red;
+                    lblProgress.ForeColor = Color.Red;
+                }
             }
             catch (Exception ex)
             {
-                Logger.LogError($"Error loading progress data: {ex.Message}", ex);
-                MessageBox.Show($"Lỗi tải dữ liệu tiến độ: {ex.Message}", "Lỗi",
+                Logger.LogError($"Error loading progress details: {ex.Message}", ex);
+                MessageBox.Show($"Lỗi tải thông tin tiến độ: {ex.Message}", "Lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void LoadDetailedProgress(System.Collections.Generic.List<Enrollment> enrollments)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
-            progressListView.Items.Clear();
-
-            foreach (var enrollment in enrollments)
-            {
-                var item = new ListViewItem(enrollment.CourseTitle);
-                item.SubItems.Add(enrollment.InstructorName);
-                item.SubItems.Add(enrollment.EnrolledAt.ToString(AppConstants.DATE_FORMAT));
-                item.SubItems.Add($"{enrollment.Progress:F1}%");
-                item.SubItems.Add(enrollment.FinalGrade?.ToString("F1") ?? "--");
-                item.SubItems.Add(GetStatusText(enrollment.Status));
-                item.SubItems.Add(enrollment.CompletedAt?.ToString(AppConstants.DATE_FORMAT) ?? "--");
-                item.Tag = enrollment;
-
-                // Color coding based on progress
-                if (enrollment.Progress >= 100)
-                    item.BackColor = Color.LightGreen;
-                else if (enrollment.Progress > 50)
-                    item.BackColor = Color.LightYellow;
-                else if (enrollment.Progress > 0)
-                    item.BackColor = Color.LightBlue;
-
-                progressListView.Items.Add(item);
-            }
-        }
-
-        private string GetStatusText(EnrollmentStatus status)
-        {
-            return status switch
-            {
-                EnrollmentStatus.Active => "Đang học",
-                EnrollmentStatus.Completed => "Hoàn thành",
-                EnrollmentStatus.Dropped => "Đã bỏ",
-                EnrollmentStatus.Suspended => "Tạm dừng",
-                _ => "Không xác định"
-            };
-        }
-
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            LoadProgressData();
-        }
-
-        private void BtnViewCertificate_Click(object sender, EventArgs e)
-        {
-            using var certificateForm = new CertificateForm(currentUser);
-            certificateForm.ShowDialog();
-        }
-
-        private void CmbCourseFilter_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // TODO: Implement filtering
-            LoadProgressData();
+            Close();
         }
     }
 }

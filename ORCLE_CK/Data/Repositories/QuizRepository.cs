@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ORCLE_CK.Data.Repositories
 {
@@ -302,34 +303,39 @@ namespace ORCLE_CK.Data.Repositories
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
 
+
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
                                r.TOTAL_QUESTIONS, r.CORRECT_ANSWERS, r.TIME_TAKEN,
-                               u.FIRST_NAME || ' ' || u.LAST_NAME as USER_FULL_NAME,
-                               q.TITLE as QUIZ_TITLE
+                               u.FULL_NAME as STUDENT_NAME,
+                               q.TITLE as QUIZ_TITLE, q.TIME_LIMIT, q.TOTAL_SCORE
                         FROM QUIZ_RESULTS r
                         JOIN USERS u ON r.USER_ID = u.USER_ID
                         JOIN QUIZZES q ON r.QUIZ_ID = q.QUIZ_ID
                         WHERE r.QUIZ_ID = :quizId
                         ORDER BY r.TAKEN_AT DESC";
+            //MessageBox.Show("trước h");
 
             using var command = new OracleCommand(sql, connection);
             command.Parameters.Add(":quizId", OracleDbType.Int32).Value = quizId;
 
             using var reader = command.ExecuteReader();
+            //MessageBox.Show("sau h");
             while (reader.Read())
             {
                 results.Add(new QuizResult
                 {
-                    ResultId = reader.GetInt32(0), // RESULT_ID
-                    QuizId = reader.GetInt32(1), // QUIZ_ID
-                    UserId = reader.GetInt32(2), // USER_ID
-                    Score = reader.GetDecimal(3), // SCORE
-                    TakenAt = reader.GetDateTime(4), // TAKEN_AT
-                    TotalQuestions = reader.GetInt32(5), // TOTAL_QUESTIONS
-                    CorrectAnswers = reader.GetInt32(6), // CORRECT_ANSWERS
-                    TimeTaken = reader.GetInt32(7), // TIME_TAKEN
-                    UserFullName = reader.GetString(8), // USER_FULL_NAME
-                    QuizTitle = reader.GetString(9) // QUIZ_TITLE
+                    ResultId = reader.GetInt32(0),
+                    QuizId = reader.GetInt32(1),
+                    UserId = reader.GetInt32(2),
+                    Score = reader.GetDecimal(3),
+                    TakenAt = reader.GetDateTime(4),
+                    TotalQuestions = reader.GetInt32(5),
+                    CorrectAnswers = reader.GetInt32(6),
+                    TimeTaken = reader.GetInt32(7),
+                    StudentName = reader.GetString(8),
+                    QuizTitle = reader.GetString(9),
+                    TimeLimit = reader.GetInt32(10),
+                    TotalScore = reader.GetInt32(11)
                 });
             }
 
@@ -343,8 +349,8 @@ namespace ORCLE_CK.Data.Repositories
 
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
                                r.TOTAL_QUESTIONS, r.CORRECT_ANSWERS, r.TIME_TAKEN,
-                               u.FIRST_NAME || ' ' || u.LAST_NAME as USER_FULL_NAME,
-                               q.TITLE as QUIZ_TITLE
+                               u.FIRST_NAME || ' ' || u.LAST_NAME as STUDENT_NAME,
+                               q.TITLE as QUIZ_TITLE, q.TIME_LIMIT, q.TOTAL_SCORE
                         FROM QUIZ_RESULTS r
                         JOIN USERS u ON r.USER_ID = u.USER_ID
                         JOIN QUIZZES q ON r.QUIZ_ID = q.QUIZ_ID
@@ -358,20 +364,27 @@ namespace ORCLE_CK.Data.Repositories
             {
                 return new QuizResult
                 {
-                    ResultId = reader.GetInt32(0), // RESULT_ID
-                    QuizId = reader.GetInt32(1), // QUIZ_ID
-                    UserId = reader.GetInt32(2), // USER_ID
-                    Score = reader.GetDecimal(3), // SCORE
-                    TakenAt = reader.GetDateTime(4), // TAKEN_AT
-                    TotalQuestions = reader.GetInt32(5), // TOTAL_QUESTIONS
-                    CorrectAnswers = reader.GetInt32(6), // CORRECT_ANSWERS
-                    TimeTaken = reader.GetInt32(7), // TIME_TAKEN
-                    UserFullName = reader.GetString(8), // USER_FULL_NAME
-                    QuizTitle = reader.GetString(9) // QUIZ_TITLE
+                    ResultId = reader.GetInt32(0),
+                    QuizId = reader.GetInt32(1),
+                    UserId = reader.GetInt32(2),
+                    Score = reader.GetDecimal(3),
+                    TakenAt = reader.GetDateTime(4),
+                    TotalQuestions = reader.GetInt32(5),
+                    CorrectAnswers = reader.GetInt32(6),
+                    TimeTaken = reader.GetInt32(7),
+                    StudentName = reader.GetString(8),
+                    QuizTitle = reader.GetString(9),
+                    TimeLimit = reader.GetInt32(10),
+                    TotalScore = reader.GetInt32(11)
                 };
             }
 
             return null;
+        }
+
+        public QuizResult GetQuizResultDetail(int resultId)
+        {
+            return GetQuizResultById(resultId);
         }
 
         public List<QuizResult> GetUserQuizResults(int userId)
@@ -383,8 +396,8 @@ namespace ORCLE_CK.Data.Repositories
 
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
                                r.TOTAL_QUESTIONS, r.CORRECT_ANSWERS, r.TIME_TAKEN,
-                               u.FIRST_NAME || ' ' || u.LAST_NAME as USER_FULL_NAME,
-                               q.TITLE as QUIZ_TITLE
+                               u.FIRST_NAME || ' ' || u.LAST_NAME as STUDENT_NAME,
+                               q.TITLE as QUIZ_TITLE, q.TIME_LIMIT, q.TOTAL_SCORE
                         FROM QUIZ_RESULTS r
                         JOIN USERS u ON r.USER_ID = u.USER_ID
                         JOIN QUIZZES q ON r.QUIZ_ID = q.QUIZ_ID
@@ -399,20 +412,47 @@ namespace ORCLE_CK.Data.Repositories
             {
                 results.Add(new QuizResult
                 {
-                    ResultId = reader.GetInt32(0), // RESULT_ID
-                    QuizId = reader.GetInt32(1), // QUIZ_ID
-                    UserId = reader.GetInt32(2), // USER_ID
-                    Score = reader.GetDecimal(3), // SCORE
-                    TakenAt = reader.GetDateTime(4), // TAKEN_AT
-                    TotalQuestions = reader.GetInt32(5), // TOTAL_QUESTIONS
-                    CorrectAnswers = reader.GetInt32(6), // CORRECT_ANSWERS
-                    TimeTaken = reader.GetInt32(7), // TIME_TAKEN
-                    UserFullName = reader.GetString(8), // USER_FULL_NAME
-                    QuizTitle = reader.GetString(9) // QUIZ_TITLE
+                    ResultId = reader.GetInt32(0),
+                    QuizId = reader.GetInt32(1),
+                    UserId = reader.GetInt32(2),
+                    Score = reader.GetDecimal(3),
+                    TakenAt = reader.GetDateTime(4),
+                    TotalQuestions = reader.GetInt32(5),
+                    CorrectAnswers = reader.GetInt32(6),
+                    TimeTaken = reader.GetInt32(7),
+                    StudentName = reader.GetString(8),
+                    QuizTitle = reader.GetString(9),
+                    TimeLimit = reader.GetInt32(10),
+                    TotalScore = reader.GetInt32(11)
                 });
             }
 
             return results;
+        }
+
+        public bool SaveQuizResult(QuizResult result)
+        {
+            using var connection = DatabaseConnection.GetConnection();
+            connection.Open();
+
+            var sql = @"INSERT INTO QUIZ_RESULTS (
+                            QUIZ_ID, USER_ID, SCORE, TAKEN_AT,
+                            TOTAL_QUESTIONS, CORRECT_ANSWERS, TIME_TAKEN
+                        ) VALUES (
+                            :quizId, :userId, :score, :takenAt,
+                            :totalQuestions, :correctAnswers, :timeTaken
+                        )";
+
+            using var command = new OracleCommand(sql, connection);
+            command.Parameters.Add(":quizId", OracleDbType.Int32).Value = result.QuizId;
+            command.Parameters.Add(":userId", OracleDbType.Int32).Value = result.UserId;
+            command.Parameters.Add(":score", OracleDbType.Decimal).Value = result.Score;
+            command.Parameters.Add(":takenAt", OracleDbType.Date).Value = result.TakenAt;
+            command.Parameters.Add(":totalQuestions", OracleDbType.Int32).Value = result.TotalQuestions;
+            command.Parameters.Add(":correctAnswers", OracleDbType.Int32).Value = result.CorrectAnswers;
+            command.Parameters.Add(":timeTaken", OracleDbType.Int32).Value = result.TimeTaken;
+
+            return command.ExecuteNonQuery() > 0;
         }
     }
 }

@@ -45,25 +45,17 @@ namespace ORCLE_CK.Forms
                 {
                     var item = new ListViewItem(submission.SubmissionId.ToString());
                     item.SubItems.Add(submission.StudentName);
-                    item.SubItems.Add(
-                        submission.Content == null
-                            ? "..."
-                            : submission.Content.Substring(0, Math.Min(50, submission.Content.Length)) + "..."
-                    );
+                    item.SubItems.Add(submission.FileUrl ?? "Không có file");
                     item.SubItems.Add(submission.SubmittedAt.ToString("dd/MM/yyyy HH:mm"));
-                    item.SubItems.Add(submission.Score?.ToString() ?? "Chưa chấm");
+                    item.SubItems.Add(submission.Grade?.ToString("0.00") ?? "Chưa chấm");
                     item.SubItems.Add(submission.MaxScore.ToString());
-                    item.SubItems.Add(
-                        submission.Feedback == null
-                            ? "..."
-                            : submission.Feedback.Substring(0, Math.Min(30, submission.Feedback.Length)) + "..."
-                    );
+                    item.SubItems.Add(submission.Feedback ?? "Chưa có nhận xét");
                     item.SubItems.Add(submission.Status);
                     item.Tag = submission;
 
-                    if (submission.Status == "Graded")
+                    if (submission.Status == "graded")
                         item.ForeColor = Color.Green;
-                    else if (submission.Status == "Late")
+                    else if (submission.Status == "returned")
                         item.ForeColor = Color.Red;
 
                     listViewSubmissions.Items.Add(item);

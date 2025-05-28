@@ -92,12 +92,11 @@ namespace ORCLE_CK.Forms
             this.listViewStudents.Font = new Font("Microsoft Sans Serif", 9F);
 
             this.listViewStudents.Columns.Add("Họ tên", 200);
-            this.listViewStudents.Columns.Add("Email", 200);
             this.listViewStudents.Columns.Add("Ngày đăng ký", 120);
             this.listViewStudents.Columns.Add("Tiến độ (%)", 100);
-            this.listViewStudents.Columns.Add("Bài học hoàn thành", 120);
-            this.listViewStudents.Columns.Add("Điểm trung bình", 100);
             this.listViewStudents.Columns.Add("Trạng thái", 100);
+            this.listViewStudents.Columns.Add("Ngày hoàn thành", 120);
+            this.listViewStudents.Columns.Add("Điểm cuối khóa", 100);
 
             this.listViewStudents.SelectedIndexChanged += ListView_SelectedIndexChanged;
 

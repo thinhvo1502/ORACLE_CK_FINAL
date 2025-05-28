@@ -1,6 +1,7 @@
 ﻿using ORCLE_CK.Data.Repositories;
 using ORCLE_CK.Models;
 using ORCLE_CK.Utils;
+using ORCLE_CK.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,13 @@ namespace ORCLE_CK.Services
     {
         private readonly IQuizRepository quizRepository;
 
-        public QuizService()
+        public QuizService(IQuizRepository quizRepository)
         {
-            quizRepository = new QuizRepository();
+            this.quizRepository = quizRepository;
+        }
+
+        public QuizService() : this(new QuizRepository())
+        {
         }
 
         public List<Quiz> GetQuizzesByCourse(int courseId)
@@ -170,21 +175,26 @@ namespace ORCLE_CK.Services
             }
             catch (Exception ex)
             {
-                Logger.LogError($"Error getting quiz results: {ex.Message}", ex);
-                throw;
+                Logger.LogError($"Error in GetQuizResults: {ex.Message}", ex);
+                throw new ServiceException("Không thể tải kết quả quiz", ex);
             }
         }
 
-        public QuizResult GetQuizResultById(int resultId)
+        public QuizResult GetQuizResultDetail(int resultId)
         {
             try
             {
-                return quizRepository.GetQuizResultById(resultId);
+                var result = quizRepository.GetQuizResultDetail(resultId);
+                if (result == null)
+                {
+                    throw new ServiceException("Không tìm thấy kết quả quiz");
+                }
+                return result;
             }
             catch (Exception ex)
             {
-                Logger.LogError($"Error getting quiz result by id: {ex.Message}", ex);
-                throw;
+                Logger.LogError($"Error in GetQuizResultDetail: {ex.Message}", ex);
+                throw new ServiceException("Không thể tải chi tiết kết quả quiz", ex);
             }
         }
 
@@ -197,7 +207,42 @@ namespace ORCLE_CK.Services
             catch (Exception ex)
             {
                 Logger.LogError($"Error getting user quiz results: {ex.Message}", ex);
-                throw;
+                throw new ServiceException("Không thể tải kết quả quiz của học viên", ex);
+            }
+        }
+
+        public bool SaveQuizResult(QuizResult result)
+        {
+            try
+            {
+                if (result == null)
+                {
+                    throw new ArgumentNullException(nameof(result));
+                }
+
+                // Validate required fields
+                if (result.QuizId <= 0 || result.UserId <= 0)
+                {
+                    throw new ArgumentException("Quiz ID và User ID phải lớn hơn 0");
+                }
+
+                if (result.Score < 0)
+                {
+                    throw new ArgumentException("Điểm không được âm");
+                }
+
+                if (result.TimeTaken < 0)
+                {
+                    throw new ArgumentException("Thời gian làm bài không được âm");
+                }
+
+                result.TakenAt = DateTime.Now;
+                return quizRepository.SaveQuizResult(result);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error saving quiz result: {ex.Message}", ex);
+                throw new ServiceException("Không thể lưu kết quả quiz", ex);
             }
         }
 
