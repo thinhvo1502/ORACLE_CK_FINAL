@@ -1,0 +1,11 @@
+E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\ORCLE_CK.exe.config
+E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\ORCLE_CK.exe
+E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\ORCLE_CK.pdb
+E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.csproj.AssemblyReference.cache
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.csproj.CoreCompileInputs.cache
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.csproj.Up2Date
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.exe
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.pdb
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.Forms.QuizResultManagementForm.resources
+E:\HK5\ORCLE_CK\ORCLE_CK\obj\Debug\ORCLE_CK.csproj.GenerateResource.cache

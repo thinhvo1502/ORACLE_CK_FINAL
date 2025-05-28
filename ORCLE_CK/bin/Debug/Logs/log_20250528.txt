@@ -1,0 +1,636 @@
+[2025-05-28 00:05:25] [INFO] Logger initialized
+[2025-05-28 00:05:25] [INFO] Application starting...
+[2025-05-28 00:05:27] [INFO] Database connection configuration loaded successfully
+[2025-05-28 00:05:40] [INFO] User phamchau authenticated successfully
+[2025-05-28 00:05:40] [INFO] User phamchau logged in successfully
+[2025-05-28 00:05:40] [INFO] User phamchau logged in successfully
+[2025-05-28 00:05:45] [INFO] Application exiting
+[2025-05-28 00:05:45] [INFO] Application closing...
+[2025-05-28 00:05:49] [INFO] Logger initialized
+[2025-05-28 00:05:49] [INFO] Application starting...
+[2025-05-28 00:05:51] [INFO] Database connection configuration loaded successfully
+[2025-05-28 00:06:08] [INFO] User tranbinh authenticated successfully
+[2025-05-28 00:06:08] [INFO] User tranbinh logged in successfully
+[2025-05-28 00:06:08] [INFO] User tranbinh logged in successfully
+[2025-05-28 00:09:28] [INFO] Application exiting
+[2025-05-28 00:09:28] [INFO] Application closing...
+[2025-05-28 00:49:29] [INFO] Logger initialized
+[2025-05-28 00:49:29] [INFO] Application starting...
+[2025-05-28 00:49:31] [INFO] Database connection configuration loaded successfully
+[2025-05-28 00:49:41] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 00:49:41] [INFO] User lehoangdat logged in successfully
+[2025-05-28 00:49:41] [INFO] User lehoangdat logged in successfully
+[2025-05-28 00:49:44] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 00:49:44] [ERROR] Error loading dashboard data: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 39
+[2025-05-28 00:49:57] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 00:49:57] [ERROR] Error loading courses: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentCourseListForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentCourseListForm.cs:line 39
+[2025-05-28 00:50:08] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 89
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 00:50:08] [ERROR] Error loading available courses: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 89
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.CourseEnrollmentForm.LoadAvailableCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\CourseEnrollmentForm.cs:line 43
+[2025-05-28 00:50:14] [INFO] Application exiting
+[2025-05-28 00:50:14] [INFO] Application closing...
+[2025-05-28 08:31:52] [INFO] Logger initialized
+[2025-05-28 08:31:52] [INFO] Application starting...
+[2025-05-28 08:31:54] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:32:36] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:32:36] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:32:36] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:32:41] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:32:41] [ERROR] Error loading dashboard data: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:33:52] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:33:52] [ERROR] Error loading dashboard data: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:34:13] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:34:13] [ERROR] Error loading dashboard data: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:37:05] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:37:05] [ERROR] Error loading courses: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentCourseListForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentCourseListForm.cs:line 39
+[2025-05-28 08:37:13] [ERROR] Error getting enrollments for student 4: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:37:13] [ERROR] Error loading courses: Specified cast is not valid.
+Exception: System.InvalidCastException: Specified cast is not valid.
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentCourseListForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentCourseListForm.cs:line 39
+[2025-05-28 08:37:22] [INFO] Application exiting
+[2025-05-28 08:37:22] [INFO] Application closing...
+[2025-05-28 08:39:40] [INFO] Logger initialized
+[2025-05-28 08:39:40] [INFO] Application starting...
+[2025-05-28 08:39:42] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:40:00] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:40:00] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:40:00] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:40:03] [ERROR] Error getting enrollments for student 4: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:40:03] [ERROR] Error loading dashboard data: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:40:12] [INFO] Application exiting
+[2025-05-28 08:40:12] [INFO] Application closing...
+[2025-05-28 08:41:55] [INFO] Logger initialized
+[2025-05-28 08:41:55] [INFO] Application starting...
+[2025-05-28 08:41:58] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:42:04] [INFO] Application closing...
+[2025-05-28 08:42:12] [INFO] Logger initialized
+[2025-05-28 08:42:12] [INFO] Application starting...
+[2025-05-28 08:42:14] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:42:28] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:42:28] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:42:28] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:42:31] [ERROR] Error getting enrollments for student 4: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:42:31] [ERROR] Error loading dashboard data: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:42:38] [INFO] Application exiting
+[2025-05-28 08:42:38] [INFO] Application closing...
+[2025-05-28 08:43:28] [INFO] Logger initialized
+[2025-05-28 08:43:28] [INFO] Application starting...
+[2025-05-28 08:43:30] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:43:40] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:43:40] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:43:40] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:43:43] [ERROR] Error getting enrollments for student 4: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 25
+[2025-05-28 08:43:43] [ERROR] Error loading dashboard data: Input string was not in a correct format.
+Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetByStudentId(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 39
+   at ORCLE_CK.Services.EnrollmentService.GetEnrollmentsByStudent(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 30
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 40
+[2025-05-28 08:43:49] [INFO] Application exiting
+[2025-05-28 08:43:49] [INFO] Application closing...
+[2025-05-28 08:45:11] [INFO] Logger initialized
+[2025-05-28 08:45:11] [INFO] Application starting...
+[2025-05-28 08:45:13] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:45:22] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:45:22] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:45:22] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:45:27] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 90
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 08:45:27] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 90
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 08:45:33] [INFO] Application exiting
+[2025-05-28 08:45:33] [INFO] Application closing...
+[2025-05-28 08:46:05] [INFO] Logger initialized
+[2025-05-28 08:46:05] [INFO] Application starting...
+[2025-05-28 08:46:07] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:46:17] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:46:17] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:46:17] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:46:22] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 90
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 08:46:22] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 90
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 08:46:26] [INFO] Application exiting
+[2025-05-28 08:46:26] [INFO] Application closing...
+[2025-05-28 08:48:49] [INFO] Logger initialized
+[2025-05-28 08:48:49] [INFO] Application starting...
+[2025-05-28 08:48:51] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:48:58] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:48:58] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:48:58] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:49:02] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 08:49:02] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 08:49:10] [INFO] Application exiting
+[2025-05-28 08:49:10] [INFO] Application closing...
+[2025-05-28 08:53:04] [INFO] Logger initialized
+[2025-05-28 08:53:04] [INFO] Application starting...
+[2025-05-28 08:53:06] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:53:14] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:53:14] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:53:14] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:53:19] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 08:53:19] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 08:53:25] [INFO] Application exiting
+[2025-05-28 08:53:25] [INFO] Application closing...
+[2025-05-28 08:54:05] [INFO] Logger initialized
+[2025-05-28 08:54:05] [INFO] Application starting...
+[2025-05-28 08:54:07] [INFO] Database connection configuration loaded successfully
+[2025-05-28 08:54:23] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 08:54:23] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:54:23] [INFO] User lehoangdat logged in successfully
+[2025-05-28 08:54:27] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 08:54:27] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 08:54:31] [INFO] Application exiting
+[2025-05-28 08:54:31] [INFO] Application closing...
+[2025-05-28 09:02:25] [INFO] Logger initialized
+[2025-05-28 09:02:25] [INFO] Application starting...
+[2025-05-28 09:02:27] [INFO] Database connection configuration loaded successfully
+[2025-05-28 09:02:35] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 09:02:35] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:02:35] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:02:39] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 09:02:39] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 09:02:45] [INFO] Application exiting
+[2025-05-28 09:02:45] [INFO] Application closing...
+[2025-05-28 09:03:26] [INFO] Logger initialized
+[2025-05-28 09:03:26] [INFO] Application starting...
+[2025-05-28 09:03:28] [INFO] Database connection configuration loaded successfully
+[2025-05-28 09:03:37] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 09:03:37] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:03:37] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:03:40] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 09:03:40] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 09:03:45] [INFO] Application exiting
+[2025-05-28 09:03:45] [INFO] Application closing...
+[2025-05-28 09:05:05] [INFO] Logger initialized
+[2025-05-28 09:05:05] [INFO] Application starting...
+[2025-05-28 09:05:07] [INFO] Database connection configuration loaded successfully
+[2025-05-28 09:05:16] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 09:05:16] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:05:16] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:05:20] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 09:05:20] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 09:05:25] [INFO] Application exiting
+[2025-05-28 09:05:25] [INFO] Application closing...
+[2025-05-28 09:07:56] [INFO] Logger initialized
+[2025-05-28 09:07:56] [INFO] Application starting...
+[2025-05-28 09:07:58] [INFO] Database connection configuration loaded successfully
+[2025-05-28 09:08:08] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 09:08:08] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:08:08] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:08:13] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 09:08:13] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 09:08:20] [INFO] Application exiting
+[2025-05-28 09:08:20] [INFO] Application closing...
+[2025-05-28 09:08:56] [INFO] Logger initialized
+[2025-05-28 09:08:56] [INFO] Application starting...
+[2025-05-28 09:08:58] [INFO] Database connection configuration loaded successfully
+[2025-05-28 09:09:06] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 09:09:06] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:09:06] [INFO] User lehoangdat logged in successfully
+[2025-05-28 09:09:32] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 09:09:32] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 09:09:38] [INFO] Application exiting
+[2025-05-28 09:09:38] [INFO] Application closing...
+[2025-05-28 10:03:15] [INFO] Logger initialized
+[2025-05-28 10:03:15] [INFO] Application starting...
+[2025-05-28 10:03:17] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:03:27] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:03:27] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:03:27] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:04:01] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:04:01] [ERROR] Error loading available courses: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.CourseEnrollmentForm.LoadAvailableCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\CourseEnrollmentForm.cs:line 43
+[2025-05-28 10:04:10] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 91
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:04:10] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 91
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 10:04:31] [INFO] Application exiting
+[2025-05-28 10:04:31] [INFO] Application closing...
+[2025-05-28 10:07:30] [INFO] Logger initialized
+[2025-05-28 10:07:30] [INFO] Application starting...
+[2025-05-28 10:07:32] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:07:44] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:07:44] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:07:44] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:07:49] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:07:49] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 10:07:53] [INFO] Application exiting
+[2025-05-28 10:07:53] [INFO] Application closing...
+[2025-05-28 10:15:18] [INFO] Logger initialized
+[2025-05-28 10:15:18] [INFO] Application starting...
+[2025-05-28 10:15:20] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:16:21] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:16:21] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:16:21] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:16:25] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:16:25] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 92
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 10:16:29] [INFO] Application exiting
+[2025-05-28 10:16:29] [INFO] Application closing...
+[2025-05-28 10:16:45] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:16:47] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:16:47] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:16:47] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:16:52] [INFO] Application exiting
+[2025-05-28 10:16:52] [INFO] Application closing...
+[2025-05-28 10:17:36] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:17:38] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:17:38] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:17:38] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:17:46] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 93
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:17:46] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 93
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 10:17:50] [INFO] Application exiting
+[2025-05-28 10:17:50] [INFO] Application closing...
+[2025-05-28 10:18:31] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:18:32] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:18:32] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:18:32] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:18:37] [ERROR] Error getting enrolled courses for student 4: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 93
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 38
+[2025-05-28 10:18:37] [ERROR] Error loading dashboard data: ORA-01722: invalid number
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01722: invalid number
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.FetchMoreRows(Int32 noOfRowsToFetch, Boolean fillReader, Boolean returnPSTypes)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.Read()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 93
+   at ORCLE_CK.Services.EnrollmentService.GetEnrolledCourses(Int32 studentId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 43
+   at ORCLE_CK.Forms.StudentDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\StudentDashboardForm.cs:line 42
+[2025-05-28 10:18:41] [INFO] Application exiting
+[2025-05-28 10:18:41] [INFO] Application closing...
+[2025-05-28 10:21:54] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:21:55] [INFO] User lehoangdat authenticated successfully
+[2025-05-28 10:21:55] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:21:55] [INFO] User lehoangdat logged in successfully
+[2025-05-28 10:26:29] [INFO] Application exiting
+[2025-05-28 10:26:29] [INFO] Application closing...
+[2025-05-28 10:29:21] [INFO] Database connection configuration loaded successfully
+[2025-05-28 10:29:24] [INFO] User phamchau authenticated successfully
+[2025-05-28 10:29:24] [INFO] User phamchau logged in successfully
+[2025-05-28 10:29:24] [INFO] User phamchau logged in successfully
+[2025-05-28 10:30:48] [INFO] Course JS nâng cao created successfully
+[2025-05-28 10:31:05] [INFO] Course JS nâng cao updated successfully
+[2025-05-28 13:21:03] [INFO] Application exiting
+[2025-05-28 13:21:03] [INFO] Application closing...
+[2025-05-28 16:17:45] [INFO] Application closing...
+[2025-05-28 16:49:10] [INFO] Application closing...
+[2025-05-28 17:00:12] [INFO] Database connection configuration loaded successfully
+[2025-05-28 17:00:13] [ERROR] Error getting user by username tranbinh: ORA-12528: TNS:listener: all appropriate instances are blocking new connections
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12528: TNS:listener: all appropriate instances are blocking new connections ---> OracleInternal.Network.NetworkException (0x000030F0): ORA-12528: TNS:listener: all appropriate instances are blocking new connections
+   at OracleInternal.Network.OracleCommunication.DoConnect(String tnsDescriptor)
+   at OracleInternal.Network.OracleCommunication.Connect(String tnsDescriptor, Boolean doNAHandshake, String IName)
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, CriteriaCtx criteriaCtx, String instanceName)
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 89
+[2025-05-28 17:00:13] [ERROR] Error in AuthenticateUser: ORA-12528: TNS:listener: all appropriate instances are blocking new connections
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-12528: TNS:listener: all appropriate instances are blocking new connections ---> OracleInternal.Network.NetworkException (0x000030F0): ORA-12528: TNS:listener: all appropriate instances are blocking new connections
+   at OracleInternal.Network.OracleCommunication.DoConnect(String tnsDescriptor)
+   at OracleInternal.Network.OracleCommunication.Connect(String tnsDescriptor, Boolean doNAHandshake, String IName)
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, CriteriaCtx criteriaCtx, String instanceName)
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+[2025-05-28 17:00:13] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-12528: TNS:listener: all appropriate instances are blocking new connections ---> OracleInternal.Network.NetworkException: ORA-12528: TNS:listener: all appropriate instances are blocking new connections
+   at OracleInternal.Network.OracleCommunication.DoConnect(String tnsDescriptor)
+   at OracleInternal.Network.OracleCommunication.Connect(String tnsDescriptor, Boolean doNAHandshake, String IName)
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.Connect(ConnectionString cs, Boolean bOpenEndUserSession, CriteriaCtx criteriaCtx, String instanceName)
+   --- End of inner exception stack trace ---
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-28 17:00:17] [ERROR] Error getting user by username tranbinh: ORA-01033: ORACLE initialization or shutdown in progress
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01033: ORACLE initialization or shutdown in progress
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 89
+[2025-05-28 17:00:17] [ERROR] Error in AuthenticateUser: ORA-01033: ORACLE initialization or shutdown in progress
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01033: ORACLE initialization or shutdown in progress
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+[2025-05-28 17:00:17] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-01033: ORACLE initialization or shutdown in progress
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, CriteriaCtx criteriaCtx, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, CriteriaCtx criteriaCtx)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-28 17:00:26] [INFO] User tranbinh authenticated successfully
+[2025-05-28 17:00:26] [INFO] User tranbinh logged in successfully
+[2025-05-28 17:00:26] [INFO] User tranbinh logged in successfully
+[2025-05-28 17:01:36] [INFO] Application exiting
+[2025-05-28 17:01:36] [INFO] Application closing...
+[2025-05-28 17:01:58] [INFO] Database connection configuration loaded successfully
+[2025-05-28 17:02:01] [INFO] User phamchau authenticated successfully
+[2025-05-28 17:02:01] [INFO] User phamchau logged in successfully
+[2025-05-28 17:02:01] [INFO] User phamchau logged in successfully
+[2025-05-28 17:07:22] [INFO] Application exiting
+[2025-05-28 17:07:22] [INFO] Application closing...
+[2025-05-28 17:14:04] [INFO] Database connection configuration loaded successfully
+[2025-05-28 17:14:06] [INFO] User tranbinh authenticated successfully
+[2025-05-28 17:14:06] [INFO] User tranbinh logged in successfully
+[2025-05-28 17:14:06] [INFO] User tranbinh logged in successfully
+[2025-05-28 17:19:54] [ERROR] Error getting quiz questions: Column contains NULL data
+Exception: System.InvalidCastException: Column contains NULL data
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetInt32(Int32 i)
+   at ORCLE_CK.Data.Repositories.QuizRepository.GetQuizQuestions(Int32 quizId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\QuizRepository.cs:line 176
+   at ORCLE_CK.Services.QuizService.GetQuizQuestions(Int32 quizId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\QuizService.cs:line 92
+[2025-05-28 17:21:41] [INFO] Application exiting
+[2025-05-28 17:21:41] [INFO] Application closing...

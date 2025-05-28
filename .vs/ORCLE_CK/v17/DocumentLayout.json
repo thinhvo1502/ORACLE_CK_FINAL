@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\HK5\\ORCLE_CK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|E:\\HK5\\ORCLE_CK\\orcle_ck\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|solutionrelative:orcle_ck\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|e:\\hk5\\orcle_ck\\orcle_ck\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|solutionrelative:orcle_ck\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|E:\\HK5\\ORCLE_CK\\orcle_ck\\forms\\quizquestionmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|solutionrelative:orcle_ck\\forms\\quizquestionmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|E:\\HK5\\ORCLE_CK\\orcle_ck\\models\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}|ORCLE_CK\\ORCLE_CK.csproj|solutionrelative:orcle_ck\\models\\quizquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "ORCLE_CK\\Forms\\MainForm.cs",
+              "ToolTip": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Forms\\MainForm.cs",
+              "RelativeToolTip": "ORCLE_CK\\Forms\\MainForm.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T17:03:18.932Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Services\\QuizService.cs",
+              "RelativeDocumentMoniker": "ORCLE_CK\\Services\\QuizService.cs",
+              "ToolTip": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Services\\QuizService.cs",
+              "RelativeToolTip": "ORCLE_CK\\Services\\QuizService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T06:20:09.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuizQuestion.cs",
+              "DocumentMoniker": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Models\\QuizQuestion.cs",
+              "RelativeDocumentMoniker": "ORCLE_CK\\Models\\QuizQuestion.cs",
+              "ToolTip": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Models\\QuizQuestion.cs",
+              "RelativeToolTip": "ORCLE_CK\\Models\\QuizQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T06:09:52.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizQuestionManagementForm.cs",
+              "DocumentMoniker": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Forms\\QuizQuestionManagementForm.cs",
+              "RelativeDocumentMoniker": "ORCLE_CK\\Forms\\QuizQuestionManagementForm.cs",
+              "ToolTip": "E:\\HK5\\ORCLE_CK\\ORCLE_CK\\Forms\\QuizQuestionManagementForm.cs",
+              "RelativeToolTip": "ORCLE_CK\\Forms\\QuizQuestionManagementForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T06:06:46.412Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1281 @@
+[2025-05-27 07:42:25] [INFO] Logger initialized
+[2025-05-27 07:42:25] [INFO] Application starting...
+[2025-05-27 07:42:28] [ERROR] Database connection test failed: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception. ---> System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleCommand..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal.Open()
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in D:\CNTTB\CĐ Oracle\ORACLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 41
+[2025-05-27 07:42:35] [INFO] Application closing...
+[2025-05-27 14:28:20] [INFO] Logger initialized
+[2025-05-27 14:28:20] [INFO] Application starting...
+[2025-05-27 14:28:23] [ERROR] Database connection test failed: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception. ---> System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleCommand..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal.Open()
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 41
+[2025-05-27 14:28:32] [INFO] Application closing...
+[2025-05-27 14:32:10] [INFO] Logger initialized
+[2025-05-27 14:32:10] [INFO] Application starting...
+[2025-05-27 14:32:12] [ERROR] Database connection test failed: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception. ---> System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleCommand..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal.Open()
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 41
+[2025-05-27 14:32:15] [INFO] Application closing...
+[2025-05-27 14:53:24] [INFO] Logger initialized
+[2025-05-27 14:53:24] [INFO] Application starting...
+[2025-05-27 14:53:27] [ERROR] Database connection test failed: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception. ---> System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleCommand..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal.Open()
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 14:53:33] [INFO] Application closing...
+[2025-05-27 14:54:36] [INFO] Logger initialized
+[2025-05-27 14:54:36] [INFO] Application starting...
+[2025-05-27 14:54:47] [INFO] Application closing...
+[2025-05-27 14:55:44] [ERROR] Database connection test failed: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.Client.OracleCommand' threw an exception. ---> System.TypeInitializationException: The type initializer for 'Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.OpenTelemetry.OracleActivitySource..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleCommand..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal.Open()
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 45
+[2025-05-27 14:57:47] [INFO] Logger initialized
+[2025-05-27 14:57:47] [INFO] Application starting...
+[2025-05-27 14:57:54] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 14:58:01] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:01:24] [INFO] Logger initialized
+[2025-05-27 15:01:24] [INFO] Application starting...
+[2025-05-27 15:01:27] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:01:28] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:01:30] [INFO] Application closing...
+[2025-05-27 15:01:46] [INFO] Logger initialized
+[2025-05-27 15:01:46] [INFO] Application starting...
+[2025-05-27 15:01:49] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:01:50] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:01:52] [INFO] Application closing...
+[2025-05-27 15:03:05] [INFO] Logger initialized
+[2025-05-27 15:03:05] [INFO] Application starting...
+[2025-05-27 15:03:13] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:03:21] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:03:57] [INFO] Logger initialized
+[2025-05-27 15:03:57] [INFO] Application starting...
+[2025-05-27 15:04:12] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:04:13] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:04:15] [INFO] Application closing...
+[2025-05-27 15:04:37] [INFO] Logger initialized
+[2025-05-27 15:04:37] [INFO] Application starting...
+[2025-05-27 15:04:41] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:04:43] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:08:11] [INFO] Logger initialized
+[2025-05-27 15:08:11] [INFO] Application starting...
+[2025-05-27 15:08:24] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:12:10] [INFO] Logger initialized
+[2025-05-27 15:12:10] [INFO] Application starting...
+[2025-05-27 15:12:13] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:12:23] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:12:25] [INFO] Application closing...
+[2025-05-27 15:14:32] [INFO] Application closing...
+[2025-05-27 15:14:35] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:15:57] [INFO] Logger initialized
+[2025-05-27 15:15:57] [INFO] Application starting...
+[2025-05-27 15:16:17] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:16:19] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:17:59] [INFO] Logger initialized
+[2025-05-27 15:17:59] [INFO] Application starting...
+[2025-05-27 15:18:04] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:18:06] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:19:11] [INFO] Logger initialized
+[2025-05-27 15:19:11] [INFO] Application starting...
+[2025-05-27 15:19:20] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:19:25] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:20:00] [INFO] Logger initialized
+[2025-05-27 15:20:00] [INFO] Application starting...
+[2025-05-27 15:20:04] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 28
+[2025-05-27 15:20:17] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 35
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 43
+[2025-05-27 15:30:02] [INFO] Logger initialized
+[2025-05-27 15:30:02] [INFO] Application starting...
+[2025-05-27 15:30:04] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 25
+[2025-05-27 15:30:04] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 31
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 39
+[2025-05-27 15:30:06] [INFO] Application closing...
+[2025-05-27 15:30:41] [INFO] Logger initialized
+[2025-05-27 15:30:41] [INFO] Application starting...
+[2025-05-27 15:30:50] [INFO] Application closing...
+[2025-05-27 15:30:55] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:30:55] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 33
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 41
+[2025-05-27 15:34:22] [INFO] Logger initialized
+[2025-05-27 15:34:22] [INFO] Application starting...
+[2025-05-27 15:34:25] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:34:26] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:38:41] [INFO] Logger initialized
+[2025-05-27 15:38:41] [INFO] Application starting...
+[2025-05-27 15:38:50] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:38:51] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:41:24] [INFO] Logger initialized
+[2025-05-27 15:41:24] [INFO] Application starting...
+[2025-05-27 15:41:28] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:41:30] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:47:27] [INFO] Logger initialized
+[2025-05-27 15:47:27] [INFO] Application starting...
+[2025-05-27 15:47:32] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:47:35] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:48:56] [INFO] Logger initialized
+[2025-05-27 15:48:56] [INFO] Application starting...
+[2025-05-27 15:49:01] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:49:03] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:50:33] [INFO] Logger initialized
+[2025-05-27 15:50:33] [INFO] Application starting...
+[2025-05-27 15:50:48] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 15:52:01] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 15:52:07] [INFO] Application closing...
+[2025-05-27 15:57:28] [INFO] Logger initialized
+[2025-05-27 15:57:28] [INFO] Application starting...
+[2025-05-27 15:57:36] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:13:06] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:13:18] [INFO] Logger initialized
+[2025-05-27 16:13:18] [INFO] Application starting...
+[2025-05-27 16:13:25] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.Configuration.ConfigurationErrorsException: An error occurred creating the configuration section handler for oracle.manageddataaccess.client: Could not load file or assembly 'Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\ORCLE_CK.exe.Config line 4) ---> System.IO.FileLoadException: Could not load file or assembly 'Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+   at System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.Init(RuntimeConfigurationRecord configRecord, FactoryRecord factoryRecord)
+   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.InitWithRestrictedPermissions(RuntimeConfigurationRecord configRecord, FactoryRecord factoryRecord)
+   at System.Configuration.RuntimeConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- End of inner exception stack trace ---
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at OracleInternal.Common.CustomConfigFileReader.ParseAndCacheConfigParams()
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:13:26] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:13:28] [INFO] Application closing...
+[2025-05-27 16:13:39] [INFO] Logger initialized
+[2025-05-27 16:13:39] [INFO] Application starting...
+[2025-05-27 16:13:42] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.Configuration.ConfigurationErrorsException: An error occurred creating the configuration section handler for oracle.manageddataaccess.client: Could not load file or assembly 'Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (E:\HK5\ORCLE_CK\ORCLE_CK\bin\Debug\ORCLE_CK.exe.Config line 4) ---> System.IO.FileLoadException: Could not load file or assembly 'Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+   at System.Configuration.TypeUtil.GetTypeWithReflectionPermission(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.Init(RuntimeConfigurationRecord configRecord, FactoryRecord factoryRecord)
+   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.InitWithRestrictedPermissions(RuntimeConfigurationRecord configRecord, FactoryRecord factoryRecord)
+   at System.Configuration.RuntimeConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   --- End of inner exception stack trace ---
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at OracleInternal.Common.CustomConfigFileReader.ParseAndCacheConfigParams()
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:13:44] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:14:54] [INFO] Logger initialized
+[2025-05-27 16:14:54] [INFO] Application starting...
+[2025-05-27 16:14:57] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:14:58] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:15:08] [INFO] Logger initialized
+[2025-05-27 16:15:08] [INFO] Application starting...
+[2025-05-27 16:15:12] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:15:13] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:25:11] [INFO] Logger initialized
+[2025-05-27 16:25:11] [INFO] Application starting...
+[2025-05-27 16:25:16] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:25:17] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:25:31] [INFO] Logger initialized
+[2025-05-27 16:25:31] [INFO] Application starting...
+[2025-05-27 16:25:40] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:26:09] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:27:32] [INFO] Logger initialized
+[2025-05-27 16:27:32] [INFO] Application starting...
+[2025-05-27 16:27:36] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:27:42] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:27:44] [INFO] Application closing...
+[2025-05-27 16:41:44] [INFO] Logger initialized
+[2025-05-27 16:41:44] [INFO] Application starting...
+[2025-05-27 16:41:50] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:41:52] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:41:55] [INFO] Application closing...
+[2025-05-27 16:42:54] [INFO] Logger initialized
+[2025-05-27 16:42:54] [INFO] Application starting...
+[2025-05-27 16:42:59] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:43:01] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:44:00] [INFO] Logger initialized
+[2025-05-27 16:44:00] [INFO] Application starting...
+[2025-05-27 16:44:06] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:44:06] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:44:29] [INFO] Logger initialized
+[2025-05-27 16:44:29] [INFO] Application starting...
+[2025-05-27 16:44:31] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:44:31] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 16:44:34] [INFO] Application closing...
+[2025-05-27 16:55:00] [INFO] Logger initialized
+[2025-05-27 16:55:00] [INFO] Application starting...
+[2025-05-27 16:55:08] [ERROR] Database connection error: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.TypeInitializationException: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.
+   at OracleInternal.Common.ProviderConfig.NewOraFileParams(OraFiles file, String filePath, Hashtable theParams, Boolean ObCfg)
+   at OracleInternal.Common.CustomConfigFileReader.ParseConfigFile()
+   at OracleInternal.Common.ConfigBaseClass.GetInstance(Boolean bIsManaged)
+   at OracleInternal.Common.ProviderConfig..cctor()
+   --- End of inner exception stack trace ---
+   at Oracle.ManagedDataAccess.Client.OracleConnectionInternal..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor()
+   at Oracle.ManagedDataAccess.Client.OracleConnection..ctor(String connectionString)
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 27
+[2025-05-27 16:55:10] [ERROR] Database connection test failed: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+Exception: System.Exception: Không thể kết nối database: The type initializer for 'OracleInternal.Common.ProviderConfig' threw an exception.
+   at ORCLE_CK.Data.DatabaseConnection.GetConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 34
+   at ORCLE_CK.Data.DatabaseConnection.TestConnection() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\DatabaseConnection.cs:line 42
+[2025-05-27 19:56:52] [INFO] Logger initialized
+[2025-05-27 19:56:52] [INFO] Application starting...
+[2025-05-27 19:57:08] [INFO] Application closing...
+[2025-05-27 20:36:42] [INFO] Logger initialized
+[2025-05-27 20:36:42] [INFO] Application starting...
+[2025-05-27 20:37:00] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:37:00] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 153
+[2025-05-27 20:37:00] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 153
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 169
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:45:25] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:45:25] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 153
+[2025-05-27 20:45:25] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 153
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 169
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:45:37] [INFO] Application closing...
+[2025-05-27 20:48:03] [INFO] Logger initialized
+[2025-05-27 20:48:03] [INFO] Application starting...
+[2025-05-27 20:48:31] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:48:31] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:48:31] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 171
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:48:51] [INFO] Application closing...
+[2025-05-27 20:49:07] [INFO] Logger initialized
+[2025-05-27 20:49:07] [INFO] Application starting...
+[2025-05-27 20:49:18] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:49:18] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 156
+[2025-05-27 20:49:18] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 156
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:50:59] [INFO] Application closing...
+[2025-05-27 20:51:08] [INFO] Logger initialized
+[2025-05-27 20:51:08] [INFO] Application starting...
+[2025-05-27 20:51:19] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:51:19] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:51:19] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:51:21] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 261
+[2025-05-27 20:51:21] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:51:21] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 269
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:53:44] [INFO] Application closing...
+[2025-05-27 20:53:56] [INFO] Logger initialized
+[2025-05-27 20:53:56] [INFO] Application starting...
+[2025-05-27 20:54:11] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 20:54:11] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:54:11] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:54:49] [WARNING] Authentication failed for user tranbinh1
+[2025-05-27 20:55:12] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 20:55:12] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:55:12] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:56:45] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 20:56:45] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:56:45] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:56:48] [INFO] Application closing...
+[2025-05-27 20:56:51] [INFO] Logger initialized
+[2025-05-27 20:56:51] [INFO] Application starting...
+[2025-05-27 20:57:02] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 20:57:02] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:57:02] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:57:04] [INFO] Application closing...
+[2025-05-27 20:58:06] [INFO] Logger initialized
+[2025-05-27 20:58:06] [INFO] Application starting...
+[2025-05-27 20:58:18] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 20:58:18] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 20:58:18] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 271
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 20:58:20] [INFO] Application closing...
+[2025-05-27 21:04:15] [INFO] Logger initialized
+[2025-05-27 21:04:15] [INFO] Application starting...
+[2025-05-27 21:04:27] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 262
+[2025-05-27 21:04:27] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 272
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 21:04:27] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 272
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 21:04:59] [INFO] Application closing...
+[2025-05-27 21:09:11] [INFO] Logger initialized
+[2025-05-27 21:09:11] [INFO] Application starting...
+[2025-05-27 21:09:27] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 283
+[2025-05-27 21:09:27] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 293
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-27 21:09:27] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 293
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 51
+[2025-05-27 21:09:29] [INFO] Application closing...
+[2025-05-27 21:13:30] [INFO] Logger initialized
+[2025-05-27 21:13:30] [INFO] Application starting...
+[2025-05-27 21:13:48] [INFO] User nguyenan authenticated successfully
+[2025-05-27 21:13:48] [INFO] User nguyenan logged in successfully
+[2025-05-27 21:13:48] [INFO] User nguyenan logged in successfully
+[2025-05-27 21:15:21] [INFO] Application exiting
+[2025-05-27 21:15:21] [INFO] Application closing...
+[2025-05-27 21:15:24] [INFO] Logger initialized
+[2025-05-27 21:15:24] [INFO] Application starting...
+[2025-05-27 21:15:29] [INFO] Application closing...
+[2025-05-27 21:16:48] [INFO] Logger initialized
+[2025-05-27 21:16:48] [INFO] Application starting...
+[2025-05-27 21:17:12] [INFO] User phamchau authenticated successfully
+[2025-05-27 21:17:12] [INFO] User phamchau logged in successfully
+[2025-05-27 21:17:12] [INFO] User phamchau logged in successfully
+[2025-05-27 21:18:37] [INFO] User phamchau logged out
+[2025-05-27 21:18:53] [INFO] User vuhung authenticated successfully
+[2025-05-27 21:18:53] [INFO] User vuhung logged in successfully
+[2025-05-27 21:18:53] [INFO] Application closing...
+[2025-05-27 21:18:53] [INFO] Logger initialized
+[2025-05-27 21:18:53] [INFO] Application starting...
+[2025-05-27 21:19:04] [INFO] User vuhung authenticated successfully
+[2025-05-27 21:19:04] [INFO] User vuhung logged in successfully
+[2025-05-27 21:19:04] [INFO] User vuhung logged in successfully
+[2025-05-27 21:19:27] [INFO] Application exiting
+[2025-05-27 21:19:27] [INFO] Application closing...
+[2025-05-27 21:19:53] [INFO] Logger initialized
+[2025-05-27 21:19:53] [INFO] Application starting...
+[2025-05-27 21:20:14] [INFO] User phamchau authenticated successfully
+[2025-05-27 21:20:14] [INFO] User phamchau logged in successfully
+[2025-05-27 21:20:14] [INFO] User phamchau logged in successfully
+[2025-05-27 22:31:05] [INFO] Application exiting
+[2025-05-27 22:31:06] [INFO] Application closing...
+[2025-05-27 22:31:21] [INFO] Logger initialized
+[2025-05-27 22:31:21] [INFO] Application starting...
+[2025-05-27 22:31:23] [INFO] Database connection configuration loaded successfully
+[2025-05-27 22:31:33] [INFO] User nguyenan authenticated successfully
+[2025-05-27 22:31:33] [INFO] User nguyenan logged in successfully
+[2025-05-27 22:31:33] [INFO] User nguyenan logged in successfully
+[2025-05-27 22:31:44] [INFO] User nguyenan logged out
+[2025-05-27 22:32:00] [INFO] User phamchau authenticated successfully
+[2025-05-27 22:32:00] [INFO] User phamchau logged in successfully
+[2025-05-27 22:32:01] [INFO] Application closing...
+[2025-05-27 22:32:01] [INFO] Logger initialized
+[2025-05-27 22:32:01] [INFO] Application starting...
+[2025-05-27 22:32:03] [INFO] Database connection configuration loaded successfully
+[2025-05-27 22:32:12] [INFO] User phamchau authenticated successfully
+[2025-05-27 22:32:12] [INFO] User phamchau logged in successfully
+[2025-05-27 22:32:12] [INFO] User phamchau logged in successfully
+[2025-05-27 22:32:50] [INFO] Application exiting
+[2025-05-27 22:32:50] [INFO] Application closing...
+[2025-05-27 22:35:03] [INFO] Logger initialized
+[2025-05-27 22:35:03] [INFO] Application starting...
+[2025-05-27 22:35:05] [INFO] Database connection configuration loaded successfully
+[2025-05-27 22:35:16] [INFO] User phamchau authenticated successfully
+[2025-05-27 22:35:16] [INFO] User phamchau logged in successfully
+[2025-05-27 22:35:16] [INFO] User phamchau logged in successfully
+[2025-05-27 22:36:17] [INFO] User dokhai updated successfully
+[2025-05-27 22:37:21] [INFO] User d12 created successfully
+[2025-05-27 22:48:41] [INFO] User d123 updated successfully
+[2025-05-27 22:49:51] [INFO] Password changed for user 31
+[2025-05-27 22:49:51] [INFO] Password changed by admin for user 31
+[2025-05-27 22:50:02] [INFO] User d123 updated successfully
+[2025-05-27 22:50:10] [INFO] User 31 deleted successfully
+[2025-05-27 22:56:54] [INFO] Application exiting
+[2025-05-27 22:56:54] [INFO] Application closing...
+[2025-05-27 22:57:07] [INFO] Logger initialized
+[2025-05-27 22:57:07] [INFO] Application starting...
+[2025-05-27 22:57:09] [INFO] Database connection configuration loaded successfully
+[2025-05-27 22:57:18] [INFO] User phamchau authenticated successfully
+[2025-05-27 22:57:18] [INFO] User phamchau logged in successfully
+[2025-05-27 22:57:18] [INFO] User phamchau logged in successfully
+[2025-05-27 23:04:00] [INFO] Course Khóa học làm người created successfully
+[2025-05-27 23:06:00] [INFO] Course Khóa học làm người updated successfully
+[2025-05-27 23:06:29] [INFO] Course 21 deleted successfully
+[2025-05-27 23:14:38] [INFO] Application exiting
+[2025-05-27 23:14:38] [INFO] Application closing...
+[2025-05-27 23:15:13] [INFO] Logger initialized
+[2025-05-27 23:15:13] [INFO] Application starting...
+[2025-05-27 23:15:15] [INFO] Database connection configuration loaded successfully
+[2025-05-27 23:15:26] [INFO] User phamchau authenticated successfully
+[2025-05-27 23:15:26] [INFO] User phamchau logged in successfully
+[2025-05-27 23:15:26] [INFO] User phamchau logged in successfully
+[2025-05-27 23:15:29] [ERROR] Error getting all courses: ORA-00923: FROM keyword not found where expected
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00923: FROM keyword not found where expected
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 35
+[2025-05-27 23:15:29] [ERROR] Error in GetAllCourses: ORA-00923: FROM keyword not found where expected
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00923: FROM keyword not found where expected
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 47
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 31
+[2025-05-27 23:15:29] [ERROR] Error loading courses: Không thể tải danh sách khóa học
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải danh sách khóa học ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-00923: FROM keyword not found where expected
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 47
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 31
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 36
+   at ORCLE_CK.Forms.CourseManagementForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\CourseManagementForm.cs:line 41
+[2025-05-27 23:15:37] [INFO] Application exiting
+[2025-05-27 23:15:37] [INFO] Application closing...
+[2025-05-27 23:16:04] [INFO] Logger initialized
+[2025-05-27 23:16:04] [INFO] Application starting...
+[2025-05-27 23:16:06] [INFO] Database connection configuration loaded successfully
+[2025-05-27 23:16:16] [INFO] User phamchau authenticated successfully
+[2025-05-27 23:16:16] [INFO] User phamchau logged in successfully
+[2025-05-27 23:16:16] [INFO] User phamchau logged in successfully
+[2025-05-27 23:16:20] [ERROR] Error getting all courses: ORA-00907: missing right parenthesis
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00907: missing right parenthesis
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 35
+[2025-05-27 23:16:20] [ERROR] Error in GetAllCourses: ORA-00907: missing right parenthesis
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00907: missing right parenthesis
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 47
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 31
+[2025-05-27 23:16:20] [ERROR] Error loading courses: Không thể tải danh sách khóa học
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải danh sách khóa học ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-00907: missing right parenthesis
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 47
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 31
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetAllCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 36
+   at ORCLE_CK.Forms.CourseManagementForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\CourseManagementForm.cs:line 41
+[2025-05-27 23:16:31] [INFO] Application exiting
+[2025-05-27 23:16:31] [INFO] Application closing...
+[2025-05-27 23:19:46] [INFO] Logger initialized
+[2025-05-27 23:19:46] [INFO] Application starting...
+[2025-05-27 23:19:48] [INFO] Database connection configuration loaded successfully
+[2025-05-27 23:20:30] [INFO] User phamchau authenticated successfully
+[2025-05-27 23:20:30] [INFO] User phamchau logged in successfully
+[2025-05-27 23:20:30] [INFO] User phamchau logged in successfully
+[2025-05-27 23:21:33] [INFO] Application exiting
+[2025-05-27 23:21:33] [INFO] Application closing...
+[2025-05-27 23:24:27] [INFO] Logger initialized
+[2025-05-27 23:24:27] [INFO] Application starting...
+[2025-05-27 23:24:29] [INFO] Database connection configuration loaded successfully
+[2025-05-27 23:24:47] [INFO] User phamchau authenticated successfully
+[2025-05-27 23:24:47] [INFO] User phamchau logged in successfully
+[2025-05-27 23:24:47] [INFO] User phamchau logged in successfully
+[2025-05-27 23:41:33] [INFO] Application exiting
+[2025-05-27 23:41:33] [INFO] Application closing...

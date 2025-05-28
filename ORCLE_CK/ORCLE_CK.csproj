@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9846C0B1-F55E-46B1-BE8B-5F8D915AAE3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ORCLE_CK</RootNamespace>
+    <AssemblyName>ORCLE_CK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Repositories\AssignmentRepository.cs" />
+    <Compile Include="Data\Repositories\CourseRepository.cs" />
+    <Compile Include="Data\Repositories\EnrollmentRepository.cs" />
+    <Compile Include="Data\Repositories\IAssignmentRepository.cs" />
+    <Compile Include="Data\Repositories\ICourseRepository.cs" />
+    <Compile Include="Data\Repositories\IEnrollmentRepository.cs" />
+    <Compile Include="Data\Repositories\ILessonRepository.cs" />
+    <Compile Include="Data\Repositories\IQuizRepository.cs" />
+    <Compile Include="Data\Repositories\LessonRepository.cs" />
+    <Compile Include="Data\Repositories\QuizRepository.cs" />
+    <Compile Include="Forms\AddAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAssignmentForm.Designer.cs">
+      <DependentUpon>AddAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddLessonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddLessonForm.Designer.cs">
+      <DependentUpon>AddLessonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddQuizForm.Designer.cs">
+      <DependentUpon>AddQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddQuizQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddQuizQuestionForm.Designer.cs">
+      <DependentUpon>AddQuizQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssignmentManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssignmentManagementForm.Designer.cs">
+      <DependentUpon>AssignmentManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CertificateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CertificateForm.Designer.cs">
+      <DependentUpon>CertificateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseDetailForm.Designer.cs">
+      <DependentUpon>CourseDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseEnrollmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseEnrollmentForm.Designer.cs">
+      <DependentUpon>CourseEnrollmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseManagementForm.Designer.cs">
+      <DependentUpon>CourseManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseSelectionForm.Designer.cs">
+      <DependentUpon>CourseSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseStudentManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseStudentManagementForm.Designer.cs">
+      <DependentUpon>CourseStudentManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CourseViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CourseViewerForm.Designer.cs">
+      <DependentUpon>CourseViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditAssignmentForm.Designer.cs">
+      <DependentUpon>EditAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditCourseForm.Designer.cs">
+      <DependentUpon>EditCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditLessonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditLessonForm.Designer.cs">
+      <DependentUpon>EditLessonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditQuizForm.Designer.cs">
+      <DependentUpon>EditQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditQuizQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditQuizQuestionForm.Designer.cs">
+      <DependentUpon>EditQuizQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GradeSubmissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GradeSubmissionForm.Designer.cs">
+      <DependentUpon>GradeSubmissionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InstructorCourseManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InstructorCourseManagementForm.Designer.cs">
+      <DependentUpon>InstructorCourseManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InstructorDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InstructorDashboardForm.Designer.cs">
+      <DependentUpon>InstructorDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InstructorStudentManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InstructorStudentManagementForm.Designer.cs">
+      <DependentUpon>InstructorStudentManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LessonManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LessonManagementForm.Designer.cs">
+      <DependentUpon>LessonManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LessonViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LessonViewerForm.Designer.cs">
+      <DependentUpon>LessonViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuizManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuizManagementForm.Designer.cs">
+      <DependentUpon>QuizManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuizQuestionManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuizQuestionManagementForm.Designer.cs">
+      <DependentUpon>QuizQuestionManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuizResultManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuizResultManagementForm.Designer.cs">
+      <DependentUpon>QuizResultManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentCourseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentCourseListForm.Designer.cs">
+      <DependentUpon>StudentCourseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentDashboardForm.Designer.cs">
+      <DependentUpon>StudentDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentProgressForm.Designer.cs">
+      <DependentUpon>StudentProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubmissionDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubmissionDetailForm.Designer.cs">
+      <DependentUpon>SubmissionDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubmissionManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubmissionManagementForm.Designer.cs">
+      <DependentUpon>SubmissionManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManagementForm.Designer.cs">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Certificate.cs" />
+    <Compile Include="Models\Discussion.cs" />
+    <Compile Include="Models\Quiz.cs" />
+    <Compile Include="Models\QuizQuestion.cs" />
+    <Compile Include="Models\QuizResult.cs" />
+    <Compile Include="Models\Submission.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Lesson.cs" />
+    <Compile Include="Models\Assignment.cs" />
+    <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Data\DatabaseConnection.cs" />
+    <Compile Include="Data\Repositories\IUserRepository.cs" />
+    <Compile Include="Data\Repositories\UserRepository.cs" />
+    <Compile Include="Services\AssignmentService.cs" />
+    <Compile Include="Services\EnrollmentService.cs" />
+    <Compile Include="Services\LessonService.cs" />
+    <Compile Include="Services\QuizService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\CourseService.cs" />
+    <Compile Include="Utils\PasswordHelper.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="Utils\AppSettings.cs" />
+    <Compile Include="Constants\AppConstants.cs" />
+    <Compile Include="Exceptions\ServiceException.cs" />
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCourseForm.Designer.cs">
+      <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountInfoForm.Designer.cs">
+      <DependentUpon>AccountInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Resources\Strings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\QuizResultManagementForm.resx">
+      <DependentUpon>QuizResultManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
