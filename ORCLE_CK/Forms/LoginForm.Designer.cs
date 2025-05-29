@@ -44,7 +44,7 @@ namespace ORCLE_CK.Forms
 
             // Form
             this.Text = $"Đăng nhập - {AppConstants.APP_NAME}";
-            this.Size = new Size(450, 300);
+            this.Size = new Size(480, 350);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;

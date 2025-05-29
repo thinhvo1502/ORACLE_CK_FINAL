@@ -93,6 +93,12 @@
     <Compile Include="Forms\AssignmentManagementForm.Designer.cs">
       <DependentUpon>AssignmentManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AuditLogFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuditLogFor.Designer.cs">
+      <DependentUpon>AuditLogFor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CertificateForm.cs">
       <SubType>Form</SubType>
     </Compile>

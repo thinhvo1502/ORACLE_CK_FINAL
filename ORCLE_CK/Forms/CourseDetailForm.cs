@@ -11,6 +11,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using Oracle.ManagedDataAccess.Client;
+using ORCLE_CK.Data;
 
 namespace ORCLE_CK.Forms
 {
@@ -224,26 +227,102 @@ namespace ORCLE_CK.Forms
 
         private void LoadStudents()
         {
-            // TODO: Implement enrollment service
-            studentsListView.Items.Clear();
-            var item = new ListViewItem("Chưa có dữ liệu học viên");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            studentsListView.Items.Add(item);
+            try
+            {
+                studentsListView.Items.Clear();
+                string connectionString = ConfigurationManager.ConnectionStrings["OracleConnection"].ConnectionString;
+                using (OracleConnection connection = new OracleConnection(connectionString))
+                {
+                    connection.Open();
+                    DatabaseConnection.setUp(connection);
+
+                    string query = @"
+                        SELECT 
+                            u.full_name,
+                            u.email,
+                            e.enrolled_at,
+                            e.progress,
+                            e.status
+                        FROM Enrollments e
+                        JOIN Users u ON e.user_id = u.user_id
+                        WHERE e.course_id = :courseId
+                        ORDER BY u.full_name";
+
+                    using (OracleCommand command = new OracleCommand(query, connection))
+                    {
+                        command.Parameters.Add(":courseId", OracleDbType.Int32).Value = course.CourseId;
+
+                        using (OracleDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var item = new ListViewItem(reader["full_name"].ToString());
+                                item.SubItems.Add(reader["email"].ToString());
+                                item.SubItems.Add(((DateTime)reader["enrolled_at"]).ToString("dd/MM/yyyy"));
+                                item.SubItems.Add($"{reader["progress"]}%");
+                                item.SubItems.Add(reader["status"].ToString() == "active" ? "Đang học" : "Đã kết thúc");
+                                studentsListView.Items.Add(item);
+                            }
+                        }
+                    }
+                }
+
+                if (studentsListView.Items.Count == 0)
+                {
+                    var item = new ListViewItem("Chưa có học viên đăng ký");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    studentsListView.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error loading students: {ex.Message}", ex);
+                MessageBox.Show($"Lỗi tải danh sách học viên: {ex.Message}", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void LoadAssignments()
         {
-            // TODO: Implement assignment service
-            assignmentsListView.Items.Clear();
-            var item = new ListViewItem("Chưa có bài tập");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            item.SubItems.Add("");
-            assignmentsListView.Items.Add(item);
+            try
+            {
+                assignmentsListView.Items.Clear();
+                var assignments = new AssignmentService().GetAssignmentsByCourse(course.CourseId);
+
+                foreach (var assignment in assignments)
+                {
+                    var item = new ListViewItem(assignment.Title);
+                    item.SubItems.Add(assignment.DueDate?.ToString("dd/MM/yyyy") ?? "Không có hạn");
+                    item.SubItems.Add(assignment.MaxScore.ToString());
+                    item.SubItems.Add(assignment.SubmissionCount.ToString());
+                    item.SubItems.Add(assignment.IsActive ? "Hoạt động" : "Vô hiệu");
+                    item.Tag = assignment;
+
+                    if (!assignment.IsActive)
+                        item.ForeColor = Color.Gray;
+
+                    assignmentsListView.Items.Add(item);
+                }
+
+                if (assignmentsListView.Items.Count == 0)
+                {
+                    var item = new ListViewItem("Chưa có bài tập");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    assignmentsListView.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error loading assignments: {ex.Message}", ex);
+                MessageBox.Show($"Lỗi tải danh sách bài tập: {ex.Message}", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void BtnEditCourse_Click(object sender, EventArgs e)

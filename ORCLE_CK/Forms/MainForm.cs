@@ -61,6 +61,11 @@ namespace ORCLE_CK.Forms
                 courseMenu.DropDownItems.Add("Thêm khóa học", null, AddCourseMenuItem_Click);
                 menuStrip.Items.Add(courseMenu);
 
+                // System Menu
+                //systemMenu = new ToolStripMenuItem("Hệ thống");
+                systemMenu.DropDownItems.Add("Lịch sử thao tác", null, AuditLogMenuItem_Click);
+                //menuStrip.Items.Add(systemMenu);
+
                 // Teaching Menu (Admin can also teach)
                 var teachingMenu = new ToolStripMenuItem("Giảng dạy");
                 teachingMenu.DropDownItems.Add("Bảng điều khiển", null, InstructorDashboardMenuItem_Click);
@@ -337,22 +342,22 @@ namespace ORCLE_CK.Forms
 
         private void LogoutMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(MessageConstants.LOGOUT_CONFIRMATION, "Xác nhận",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            var result = MessageBox.Show(
+         MessageConstants.LOGOUT_CONFIRMATION,
+         "Xác nhận",
+         MessageBoxButtons.YesNo,
+         MessageBoxIcon.Question
+     );
+
+            if (result == DialogResult.Yes)
             {
                 Logger.LogInfo($"User {currentUser.Username} logged out");
-                this.Hide();
 
-                using var loginForm = new LoginForm();
-                if (loginForm.ShowDialog() == DialogResult.OK)
-                {
-                    // Restart with new user
-                    Application.Restart();
-                }
-                else
-                {
-                    Application.Exit();
-                }
+                // Restart application immediately
+                Application.Restart();
+
+                // Optional: Exit current instance to ensure clean restart
+                Application.Exit();
             }
         }
 
@@ -364,6 +369,12 @@ namespace ORCLE_CK.Forms
                 Logger.LogInfo("Application exiting");
                 Application.Exit();
             }
+        }
+
+        private void AuditLogMenuItem_Click(object sender, EventArgs e)
+        {
+            using var auditLogForm = new AuditLogFor();
+            auditLogForm.ShowDialog();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

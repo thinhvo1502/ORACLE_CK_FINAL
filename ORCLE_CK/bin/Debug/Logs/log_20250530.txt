@@ -1,0 +1,8 @@
+[2025-05-30 00:03:48] [INFO] Application exiting
+[2025-05-30 00:03:48] [INFO] Application closing...
+[2025-05-30 00:08:54] [INFO] Database connection configuration loaded successfully
+[2025-05-30 00:08:56] [INFO] User tranbinh authenticated successfully
+[2025-05-30 00:08:56] [INFO] User tranbinh logged in successfully
+[2025-05-30 00:08:56] [INFO] User tranbinh logged in successfully
+[2025-05-30 00:11:12] [INFO] Application exiting
+[2025-05-30 00:11:12] [INFO] Application closing...

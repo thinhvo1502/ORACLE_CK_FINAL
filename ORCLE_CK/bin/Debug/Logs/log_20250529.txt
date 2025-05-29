@@ -1705,3 +1705,114 @@ Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-010
 [2025-05-29 22:31:57] [INFO] User phamchau logged in successfully
 [2025-05-29 22:32:22] [INFO] Application exiting
 [2025-05-29 22:32:22] [INFO] Application closing...
+[2025-05-29 22:45:24] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:45:26] [INFO] User phamchau authenticated successfully
+[2025-05-29 22:45:26] [INFO] User phamchau logged in successfully
+[2025-05-29 22:45:26] [INFO] User phamchau logged in successfully
+[2025-05-29 22:48:30] [INFO] User phamchau logged out
+[2025-05-29 22:48:41] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:48:41] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:48:42] [INFO] Application closing...
+[2025-05-29 22:48:52] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:48:53] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 22:48:57] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:48:57] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:48:57] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:55:24] [INFO] Course Quản trị Cơ sở dữ liệu updated successfully
+[2025-05-29 23:08:28] [INFO] Application exiting
+[2025-05-29 23:08:28] [INFO] Application closing...
+[2025-05-29 23:08:43] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:08:45] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:08:45] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:08:45] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:08:51] [INFO] Application exiting
+[2025-05-29 23:08:51] [INFO] Application closing...
+[2025-05-29 23:09:14] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:09:17] [INFO] User phamchau authenticated successfully
+[2025-05-29 23:09:17] [INFO] User phamchau logged in successfully
+[2025-05-29 23:09:17] [INFO] User phamchau logged in successfully
+[2025-05-29 23:09:21] [ERROR] Error loading audit logs: ORA-00904: "AL"."TIMESTAMP": invalid identifier
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "AL"."TIMESTAMP": invalid identifier
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.AuditLogFor.LoadAuditLogs() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AuditLogFor.cs:line 99
+[2025-05-29 23:09:27] [ERROR] Error loading audit logs: ORA-00904: "AL"."TIMESTAMP": invalid identifier
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00904: "AL"."TIMESTAMP": invalid identifier
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.AuditLogFor.LoadAuditLogs() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AuditLogFor.cs:line 99
+[2025-05-29 23:09:41] [INFO] Application exiting
+[2025-05-29 23:09:41] [INFO] Application closing...
+[2025-05-29 23:12:11] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:12:13] [INFO] User phamchau authenticated successfully
+[2025-05-29 23:12:13] [INFO] User phamchau logged in successfully
+[2025-05-29 23:12:13] [INFO] User phamchau logged in successfully
+[2025-05-29 23:15:12] [INFO] Application exiting
+[2025-05-29 23:15:12] [INFO] Application closing...
+[2025-05-29 23:16:41] [INFO] Application closing...
+[2025-05-29 23:19:28] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:19:30] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 23:19:35] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:19:35] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:19:35] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:29:07] [INFO] Application exiting
+[2025-05-29 23:29:07] [INFO] Application closing...
+[2025-05-29 23:30:23] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:30:25] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:30:25] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:30:25] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:30:33] [ERROR] Error searching students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.SearchStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 290
+[2025-05-29 23:30:39] [INFO] Application exiting
+[2025-05-29 23:30:39] [INFO] Application closing...
+[2025-05-29 23:32:02] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:32:03] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:32:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:32:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:32:11] [ERROR] Error searching students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.SearchStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 289
+[2025-05-29 23:32:22] [INFO] Application exiting
+[2025-05-29 23:32:22] [INFO] Application closing...
+[2025-05-29 23:34:10] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:34:12] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:34:12] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:34:12] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:34:49] [INFO] User tranbinh logged out
+[2025-05-29 23:34:53] [INFO] Application closing...
+[2025-05-29 23:35:56] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:35:59] [INFO] User phamchau authenticated successfully
+[2025-05-29 23:35:59] [INFO] User phamchau logged in successfully
+[2025-05-29 23:35:59] [INFO] User phamchau logged in successfully
+[2025-05-29 23:38:08] [INFO] User phamchau logged out
+[2025-05-29 23:38:08] [INFO] Application closing...
+[2025-05-29 23:38:18] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:38:20] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 23:38:24] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:38:24] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:38:24] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:40:08] [INFO] Application exiting
+[2025-05-29 23:40:08] [INFO] Application closing...
+[2025-05-29 23:49:14] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:49:16] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:49:16] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:49:16] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:51:42] [INFO] Application exiting
+[2025-05-29 23:51:42] [INFO] Application closing...
+[2025-05-29 23:58:44] [INFO] Database connection configuration loaded successfully
+[2025-05-29 23:58:45] [INFO] User tranbinh authenticated successfully
+[2025-05-29 23:58:45] [INFO] User tranbinh logged in successfully
+[2025-05-29 23:58:46] [INFO] User tranbinh logged in successfully
