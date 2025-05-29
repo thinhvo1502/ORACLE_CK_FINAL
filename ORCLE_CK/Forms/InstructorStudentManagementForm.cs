@@ -107,67 +107,78 @@ namespace ORCLE_CK.Forms
                             e.enrolled_at,
                             e.progress,
                             ROUND(
-        COALESCE(
-            (sg.quiz_avg + ag.assignment_avg) / 2.0,
-            sg.quiz_avg,
-            ag.assignment_avg,
-            0
-        ), 2
-    ) as average_grade
-
+                                COALESCE(
+                                    (sg.quiz_avg + ag.assignment_avg) / 2.0,
+                                    sg.quiz_avg,
+                                    ag.assignment_avg,
+                                    0
+                                ), 2
+                            ) as average_grade
                         FROM Enrollments e
                         JOIN Users u ON e.user_id = u.user_id
                         JOIN Courses c ON e.course_id = c.course_id
                         LEFT JOIN StudentGrades sg ON e.user_id = sg.user_id AND e.course_id = sg.course_id
                         LEFT JOIN AssignmentGrades ag ON e.user_id = ag.user_id AND e.course_id = ag.course_id
                         WHERE c.instructor_id = :instructor_id
-                        AND e.status = 'active'
-                        ORDER BY u.full_name, c.title";
+                        AND e.status = 'active'";
 
-                    using (OracleCommand command = new OracleCommand(query, connection))
-                    {
-                        command.Parameters.Add(":instructor_id", OracleDbType.Int32).Value = currentUser.UserId;
+                        // Add course filter condition if a specific course is selected
+                        //if (cmbCourseFilter.SelectedIndex > 0)
+                        //{
+                        //    query += " AND c.title = :course_title";
+                        //}
 
-                        using (OracleDataReader reader = command.ExecuteReader())
+                        //query += " ORDER BY u.full_name, c.title";
+
+                        using (OracleCommand command = new OracleCommand(query, connection))
                         {
-                            while (reader.Read())
+                            command.Parameters.Add(":instructor_id", OracleDbType.Int32).Value = currentUser.UserId;
+                            
+                            //if (cmbCourseFilter.SelectedIndex > 0)
+                            //{
+                            //MessageBox.Show(cmbCourseFilter.SelectedItem.ToString());
+          
+                            //    command.Parameters.Add(":course_title", OracleDbType.NVarchar2).Value = cmbCourseFilter.SelectedItem.ToString();
+                            //}
+
+                            using (OracleDataReader reader = command.ExecuteReader())
                             {
-                                var item = new ListViewItem(reader["full_name"].ToString());
-                                item.SubItems.Add(reader["email"].ToString());
-                                item.SubItems.Add(reader["course_title"].ToString());
-                                item.SubItems.Add(((DateTime)reader["enrolled_at"]).ToString("dd/MM/yyyy"));
-                                item.SubItems.Add($"{reader["progress"]}%");
-
-                                //item.SubItems.Add("");
-
-                                object avgObj = reader["average_grade"];
-
-                                if (avgObj == DBNull.Value)
+                                while (reader.Read())
                                 {
-                                    item.SubItems.Add("N/A");
-                                }
-                                else
-                                {
-                                    // Chuyển sang decimal hoặc double đều được, tùy độ chính xác bạn muốn
-                                    double avg = Convert.ToDouble(avgObj);
-                                    item.SubItems.Add(Math.Round(avg, 2).ToString()); // Làm tròn đến 2 chữ số
-                                }
+                                    var item = new ListViewItem(reader["full_name"].ToString());
+                                    item.SubItems.Add(reader["email"].ToString());
+                                    item.SubItems.Add(reader["course_title"].ToString());
+                                    item.SubItems.Add(((DateTime)reader["enrolled_at"]).ToString("dd/MM/yyyy"));
+                                    item.SubItems.Add($"{reader["progress"]}%");
 
-                                listViewStudents.Items.Add(item);
+                                    object avgObj = reader["average_grade"];
+
+                                    if (avgObj == DBNull.Value)
+                                    {
+                                        item.SubItems.Add("N/A");
+                                    }
+                                    else
+                                    {
+                                        double avg = Convert.ToDouble(avgObj);
+                                        item.SubItems.Add(Math.Round(avg, 2).ToString());
+                                    }
+                                if (cmbCourseFilter.SelectedIndex == 0  || (cmbCourseFilter.SelectedIndex > 0 && reader["course_title"].ToString() == cmbCourseFilter.SelectedItem.ToString()))
+                                    listViewStudents.Items.Add(item);
+                                
+                                }
                             }
                         }
-                    }
                 }
 
                 if (listViewStudents.Items.Count == 0)
                 {
-                var item = new ListViewItem("Chưa có dữ liệu học viên");
-                item.SubItems.Add("");
-                item.SubItems.Add("");
-                item.SubItems.Add("");
-                item.SubItems.Add("");
-                item.SubItems.Add("");
-                listViewStudents.Items.Add(item);
+                    var item = new ListViewItem("Chưa có dữ liệu học viên");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    item.SubItems.Add("");
+                    listViewStudents.Items.Add(item);
                 }
 
                 statusLabel.Text = $"Đã tải {listViewStudents.Items.Count} học viên";

@@ -33,8 +33,6 @@ namespace ORCLE_CK.Forms
         // Hàm mở kết nối và gán identifier
         void OpenConnectionWithSessionIdentifier(int user_id)
         {
-            //var connStr = ConfigurationManager.ConnectionStrings["OracleConnection"].ConnectionString;
-
             using (var conn = DatabaseConnection.GetConnection()) 
             {
                 conn.Open();
@@ -51,13 +49,11 @@ namespace ORCLE_CK.Forms
                     cmd.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CLIENT_IDENTIFIER') FROM dual";
 
                     var result = cmd.ExecuteScalar();
-                    MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
+                    //MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
                 }
-
-
-                // Bây giờ bạn có thể tiếp tục làm việc với session có identifier
             }
         }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
@@ -85,12 +81,6 @@ namespace ORCLE_CK.Forms
                 if (CurrentUser != null)
                 {
                     Logger.LogInfo($"User {CurrentUser.Username} logged in successfully");
-
-                    // Save remember me preference if needed
-                    if (chkRememberMe.Checked)
-                    {
-                        // TODO: Implement remember me functionality
-                    }
                     OpenConnectionWithSessionIdentifier(CurrentUser.UserId);
                     DatabaseConnection.setId(CurrentUser.UserId);
                     this.DialogResult = DialogResult.OK;
@@ -134,12 +124,6 @@ namespace ORCLE_CK.Forms
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void LinkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MessageBox.Show("Chức năng quên mật khẩu đang được phát triển!", "Thông báo",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         protected override void OnLoad(EventArgs e)

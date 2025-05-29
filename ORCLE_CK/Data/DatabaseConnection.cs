@@ -45,7 +45,7 @@ namespace ORCLE_CK.Data
         {
             using (OracleCommand cmd = conn.CreateCommand())
             {
-                MessageBox.Show("nè",userId.ToString());
+                //MessageBox.Show("nè",userId.ToString());
                 // Gán CLIENT_IDENTIFIER
                 cmd.CommandText = "BEGIN DBMS_SESSION.SET_IDENTIFIER(:id); END;";
                 cmd.Parameters.Add("id", OracleDbType.Int32).Value = userId;
@@ -56,7 +56,7 @@ namespace ORCLE_CK.Data
                 cmd.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CLIENT_IDENTIFIER') FROM dual";
 
                 var result = cmd.ExecuteScalar();
-                MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
+                //MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
             }
         }
         public static OracleConnection GetConnection()

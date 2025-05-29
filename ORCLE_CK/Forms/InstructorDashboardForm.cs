@@ -70,9 +70,9 @@ namespace ORCLE_CK.Forms
 
             // Create stat cards
             CreateStatCard("Tổng khóa học", totalCourses.ToString(), Color.Blue, new Point(20, 20));
-            CreateStatCard("Khóa học hoạt động", activeCourses.ToString(), Color.Green, new Point(200, 20));
-            CreateStatCard("Tổng học viên", totalStudents.ToString(), Color.Orange, new Point(380, 20));
-            CreateStatCard("Tổng bài học", totalLessons.ToString(), Color.Purple, new Point(560, 20));
+            CreateStatCard("Khóa học hoạt động", activeCourses.ToString(), Color.Green, new Point(220, 20));
+            CreateStatCard("Tổng học viên", totalStudents.ToString(), Color.Orange, new Point(420, 20));
+            CreateStatCard("Tổng bài học", totalLessons.ToString(), Color.Purple, new Point(620, 20));
         }
 
         private void CreateStatCard(string title, string value, Color color, Point location)
@@ -80,7 +80,7 @@ namespace ORCLE_CK.Forms
             var card = new Panel
             {
                 Location = location,
-                Size = new Size(150, 80),
+                Size = new Size(170, 80),
                 BackColor = color,
                 BorderStyle = BorderStyle.FixedSingle
             };
@@ -91,7 +91,7 @@ namespace ORCLE_CK.Forms
                 ForeColor = Color.White,
                 Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold),
                 Location = new Point(10, 10),
-                Size = new Size(130, 20),
+                Size = new Size(150, 20),
                 TextAlign = ContentAlignment.MiddleCenter
             };
 

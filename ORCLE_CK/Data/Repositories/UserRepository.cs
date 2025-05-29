@@ -289,7 +289,7 @@ namespace ORCLE_CK.Data.Repositories
                     //    var result = cmd.ExecuteScalar();
                     //    MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
                     //}
-                    MessageBox.Show("hahaaa");
+                    //MessageBox.Show("hahaaa");
                     DatabaseConnection.setId(userId);
                     DatabaseConnection.setUp(connection);
                     
@@ -299,7 +299,7 @@ namespace ORCLE_CK.Data.Repositories
                     using (var command = new OracleCommand(sql, connection))
                     {
                         command.Parameters.Add(":userId", OracleDbType.Int32).Value = userId;
-                        MessageBox.Show(userId.ToString());
+                        //MessageBox.Show(userId.ToString());
                         var result = command.ExecuteNonQuery();
                         //MessageBox.Show("haha2");
                         return result > 0;

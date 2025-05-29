@@ -1550,3 +1550,158 @@ Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-022
 [2025-05-29 19:12:03] [INFO] User tranbinh logged in successfully
 [2025-05-29 19:14:42] [INFO] Application exiting
 [2025-05-29 19:14:42] [INFO] Application closing...
+[2025-05-29 21:36:32] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:36:40] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:36:40] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:36:40] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:36:52] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 142
+[2025-05-29 21:37:03] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 142
+[2025-05-29 21:37:06] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 142
+[2025-05-29 21:37:21] [INFO] Application exiting
+[2025-05-29 21:37:21] [INFO] Application closing...
+[2025-05-29 21:38:50] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:38:55] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:38:55] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:38:55] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:39:04] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 142
+[2025-05-29 21:39:10] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 142
+[2025-05-29 21:39:15] [INFO] Application exiting
+[2025-05-29 21:39:15] [INFO] Application closing...
+[2025-05-29 21:40:55] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:40:57] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 21:41:05] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:41:05] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:41:06] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:41:18] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 144
+[2025-05-29 21:41:29] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 144
+[2025-05-29 21:48:53] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:48:57] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:48:57] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:48:58] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:53:24] [ERROR] Error loading students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.LoadStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 144
+[2025-05-29 21:56:55] [INFO] Application exiting
+[2025-05-29 21:56:55] [INFO] Application closing...
+[2025-05-29 21:56:58] [INFO] Application exiting
+[2025-05-29 21:56:58] [INFO] Application closing...
+[2025-05-29 21:57:08] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:57:10] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 21:57:17] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:57:17] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:57:18] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:57:32] [INFO] Application exiting
+[2025-05-29 21:57:33] [INFO] Application closing...
+[2025-05-29 21:58:59] [INFO] Database connection configuration loaded successfully
+[2025-05-29 21:59:03] [INFO] User tranbinh authenticated successfully
+[2025-05-29 21:59:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 21:59:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:00:43] [INFO] Application exiting
+[2025-05-29 22:00:43] [INFO] Application closing...
+[2025-05-29 22:10:48] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:10:53] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:10:53] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:10:53] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:11:01] [ERROR] Error searching students: ORA-01008: not all variables bound
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-01008: not all variables bound
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader()
+   at ORCLE_CK.Forms.InstructorStudentManagementForm.SearchStudents() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorStudentManagementForm.cs:line 297
+[2025-05-29 22:11:08] [INFO] Application exiting
+[2025-05-29 22:11:08] [INFO] Application closing...
+[2025-05-29 22:13:59] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:14:04] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:14:04] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:14:05] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:14:51] [INFO] Application exiting
+[2025-05-29 22:14:51] [INFO] Application closing...
+[2025-05-29 22:15:34] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:15:37] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:15:37] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:15:38] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:15:44] [INFO] Application exiting
+[2025-05-29 22:15:44] [INFO] Application closing...
+[2025-05-29 22:17:12] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:17:15] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:17:15] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:17:15] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:17:17] [INFO] Application exiting
+[2025-05-29 22:17:17] [INFO] Application closing...
+[2025-05-29 22:19:08] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:19:09] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:19:09] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:19:09] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:24:04] [INFO] Application exiting
+[2025-05-29 22:24:04] [INFO] Application closing...
+[2025-05-29 22:24:28] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:24:29] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:24:29] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:24:29] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:25:33] [INFO] Application exiting
+[2025-05-29 22:25:33] [INFO] Application closing...
+[2025-05-29 22:25:47] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:25:48] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:25:48] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:25:48] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:26:35] [INFO] Application exiting
+[2025-05-29 22:26:35] [INFO] Application closing...
+[2025-05-29 22:29:37] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:29:38] [INFO] User tranbinh authenticated successfully
+[2025-05-29 22:29:38] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:29:38] [INFO] User tranbinh logged in successfully
+[2025-05-29 22:31:17] [INFO] Application exiting
+[2025-05-29 22:31:17] [INFO] Application closing...
+[2025-05-29 22:31:55] [INFO] Database connection configuration loaded successfully
+[2025-05-29 22:31:57] [INFO] User phamchau authenticated successfully
+[2025-05-29 22:31:57] [INFO] User phamchau logged in successfully
+[2025-05-29 22:31:57] [INFO] User phamchau logged in successfully
+[2025-05-29 22:32:22] [INFO] Application exiting
+[2025-05-29 22:32:22] [INFO] Application closing...

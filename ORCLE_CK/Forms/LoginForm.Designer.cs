@@ -40,13 +40,11 @@ namespace ORCLE_CK.Forms
             this.lblUsername = new Label();
             this.lblPassword = new Label();
             this.lblTitle = new Label();
-            this.chkRememberMe = new CheckBox();
-            this.linkForgotPassword = new LinkLabel();
             this.SuspendLayout();
 
             // Form
             this.Text = $"Đăng nhập - {AppConstants.APP_NAME}";
-            this.Size = new Size(450, 350);
+            this.Size = new Size(450, 300);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -81,22 +79,9 @@ namespace ORCLE_CK.Forms
             this.txtPassword.Font = new Font("Microsoft Sans Serif", 10F);
             this.txtPassword.UseSystemPasswordChar = true;
 
-            // Remember Me
-            this.chkRememberMe.Text = "Ghi nhớ đăng nhập";
-            this.chkRememberMe.Location = new Point(50, 210);
-            this.chkRememberMe.Size = new Size(150, 20);
-            this.chkRememberMe.Font = new Font("Microsoft Sans Serif", 9F);
-
-            // Forgot Password
-            this.linkForgotPassword.Text = "Quên mật khẩu?";
-            this.linkForgotPassword.Location = new Point(320, 210);
-            this.linkForgotPassword.Size = new Size(80, 20);
-            this.linkForgotPassword.Font = new Font("Microsoft Sans Serif", 9F);
-            this.linkForgotPassword.LinkClicked += LinkForgotPassword_LinkClicked;
-
             // Login Button
             this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.Location = new Point(200, 250);
+            this.btnLogin.Location = new Point(200, 220);
             this.btnLogin.Size = new Size(100, 35);
             this.btnLogin.Font = new Font("Microsoft Sans Serif", 10F);
             this.btnLogin.BackColor = Color.DodgerBlue;
@@ -106,7 +91,7 @@ namespace ORCLE_CK.Forms
 
             // Exit Button
             this.btnExit.Text = "Thoát";
-            this.btnExit.Location = new Point(310, 250);
+            this.btnExit.Location = new Point(310, 220);
             this.btnExit.Size = new Size(90, 35);
             this.btnExit.Font = new Font("Microsoft Sans Serif", 10F);
             this.btnExit.BackColor = Color.Gray;
@@ -120,8 +105,6 @@ namespace ORCLE_CK.Forms
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.chkRememberMe);
-            this.Controls.Add(this.linkForgotPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnExit);
 
@@ -129,9 +112,8 @@ namespace ORCLE_CK.Forms
             this.AcceptButton = this.btnLogin;
             this.txtUsername.TabIndex = 0;
             this.txtPassword.TabIndex = 1;
-            this.chkRememberMe.TabIndex = 2;
-            this.btnLogin.TabIndex = 3;
-            this.btnExit.TabIndex = 4;
+            this.btnLogin.TabIndex = 2;
+            this.btnExit.TabIndex = 3;
 
             this.ResumeLayout(false);
         }
@@ -143,8 +125,6 @@ namespace ORCLE_CK.Forms
         private Label lblUsername;
         private Label lblPassword;
         private Label lblTitle;
-        private CheckBox chkRememberMe;
-        private LinkLabel linkForgotPassword;
 
         #endregion
     }
