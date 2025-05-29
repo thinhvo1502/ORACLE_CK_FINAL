@@ -503,3 +503,1050 @@ Exception: System.InvalidCastException: Column contains NULL data
 [2025-05-29 03:15:44] [INFO] User phamchau logged in successfully
 [2025-05-29 03:16:19] [INFO] Application exiting
 [2025-05-29 03:16:19] [INFO] Application closing...
+[2025-05-29 12:26:37] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:26:40] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:26:40] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:26:40] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:26:49] [INFO] Application exiting
+[2025-05-29 12:26:49] [INFO] Application closing...
+[2025-05-29 12:27:54] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:27:58] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:27:58] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:27:58] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:28:04] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:28:04] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:28:04] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:28:38] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:28:38] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:28:38] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:28:41] [INFO] Application closing...
+[2025-05-29 12:29:01] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:29:03] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:29:03] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:29:03] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:29:07] [INFO] Application closing...
+[2025-05-29 12:29:50] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:29:52] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:29:52] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:29:52] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:29:55] [INFO] Application exiting
+[2025-05-29 12:29:55] [INFO] Application closing...
+[2025-05-29 12:31:20] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:31:22] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:31:22] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:31:22] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:37:11] [INFO] Application exiting
+[2025-05-29 12:37:11] [INFO] Application closing...
+[2025-05-29 12:37:19] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:37:22] [ERROR] Error updating last login for user 2: ORA-04098: trigger 'MYUSER.TRACK_USER_ACTIONS' is invalid and failed re-validation
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04098: trigger 'MYUSER.TRACK_USER_ACTIONS' is invalid and failed re-validation
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:37:22] [ERROR] Error in AuthenticateUser: ORA-04098: trigger 'MYUSER.TRACK_USER_ACTIONS' is invalid and failed re-validation
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04098: trigger 'MYUSER.TRACK_USER_ACTIONS' is invalid and failed re-validation
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:37:22] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04098: trigger 'MYUSER.TRACK_USER_ACTIONS' is invalid and failed re-validation
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:37:39] [INFO] Application closing...
+[2025-05-29 12:40:30] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:40:33] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:40:33] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:40:33] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:40:35] [INFO] Application closing...
+[2025-05-29 12:42:33] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:42:35] [ERROR] Error updating last login for user 2: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 280
+[2025-05-29 12:42:35] [ERROR] Error in AuthenticateUser: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 12:42:35] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-04091: table MYUSER.USERS is mutating, trigger/function may not see it
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 28
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 290
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 75
+[2025-05-29 12:42:38] [INFO] Application closing...
+[2025-05-29 12:43:18] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:43:19] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:43:19] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:43:19] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:43:22] [INFO] Application exiting
+[2025-05-29 12:43:22] [INFO] Application closing...
+[2025-05-29 12:50:53] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:50:55] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:50:55] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:50:55] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:57:12] [INFO] Application exiting
+[2025-05-29 12:57:12] [INFO] Application closing...
+[2025-05-29 12:59:35] [INFO] Database connection configuration loaded successfully
+[2025-05-29 12:59:37] [INFO] User tranbinh authenticated successfully
+[2025-05-29 12:59:37] [INFO] User tranbinh logged in successfully
+[2025-05-29 12:59:37] [INFO] User tranbinh logged in successfully
+[2025-05-29 13:00:50] [INFO] Course Lập trình SQL Cơ bản updated successfully
+[2025-05-29 13:01:11] [INFO] Application exiting
+[2025-05-29 13:01:11] [INFO] Application closing...
+[2025-05-29 13:01:34] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:01:36] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:01:36] [INFO] User phamchau logged in successfully
+[2025-05-29 13:01:36] [INFO] User phamchau logged in successfully
+[2025-05-29 13:01:57] [INFO] User d123 updated successfully
+[2025-05-29 13:09:22] [INFO] Application exiting
+[2025-05-29 13:09:22] [INFO] Application closing...
+[2025-05-29 13:10:36] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:10:39] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:10:39] [INFO] User phamchau logged in successfully
+[2025-05-29 13:10:39] [INFO] User phamchau logged in successfully
+[2025-05-29 13:12:24] [INFO] Application exiting
+[2025-05-29 13:12:24] [INFO] Application closing...
+[2025-05-29 13:12:42] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:12:44] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:12:44] [INFO] User phamchau logged in successfully
+[2025-05-29 13:12:44] [INFO] User phamchau logged in successfully
+[2025-05-29 13:12:48] [INFO] Application exiting
+[2025-05-29 13:12:48] [INFO] Application closing...
+[2025-05-29 13:20:56] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:20:58] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:20:58] [INFO] User phamchau logged in successfully
+[2025-05-29 13:20:58] [INFO] User phamchau logged in successfully
+[2025-05-29 13:21:31] [INFO] Application exiting
+[2025-05-29 13:21:31] [INFO] Application closing...
+[2025-05-29 13:23:54] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:24:11] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:24:11] [INFO] User phamchau logged in successfully
+[2025-05-29 13:24:11] [INFO] User phamchau logged in successfully
+[2025-05-29 13:24:34] [INFO] Application exiting
+[2025-05-29 13:24:34] [INFO] Application closing...
+[2025-05-29 13:32:44] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:32:47] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:32:47] [INFO] User phamchau logged in successfully
+[2025-05-29 13:32:47] [INFO] User phamchau logged in successfully
+[2025-05-29 13:41:28] [INFO] Application exiting
+[2025-05-29 13:41:28] [INFO] Application closing...
+[2025-05-29 13:43:05] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:43:07] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:43:07] [INFO] User phamchau logged in successfully
+[2025-05-29 13:43:08] [INFO] User phamchau logged in successfully
+[2025-05-29 13:43:12] [ERROR] Error getting all users: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 25
+[2025-05-29 13:43:12] [ERROR] Error in GetAllUsers: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 43
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 32
+[2025-05-29 13:43:12] [ERROR] Error loading users: Không thể tải danh sách người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải danh sách người dùng ---> System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 43
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 32
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 37
+   at ORCLE_CK.Forms.UserManagementForm.LoadUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\UserManagementForm.cs:line 40
+[2025-05-29 13:43:19] [INFO] Application exiting
+[2025-05-29 13:43:19] [INFO] Application closing...
+[2025-05-29 13:44:03] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:44:05] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:44:05] [INFO] User phamchau logged in successfully
+[2025-05-29 13:44:05] [INFO] User phamchau logged in successfully
+[2025-05-29 13:48:38] [INFO] Application exiting
+[2025-05-29 13:48:38] [INFO] Application closing...
+[2025-05-29 13:48:48] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:48:50] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:48:50] [INFO] User phamchau logged in successfully
+[2025-05-29 13:48:50] [INFO] User phamchau logged in successfully
+[2025-05-29 13:49:06] [ERROR] Error getting all users: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 25
+[2025-05-29 13:49:06] [ERROR] Error in GetAllUsers: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 43
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 32
+[2025-05-29 13:49:06] [ERROR] Error loading users: Không thể tải danh sách người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải danh sách người dùng ---> System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 43
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 32
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.GetAllUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 37
+   at ORCLE_CK.Forms.UserManagementForm.LoadUsers() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\UserManagementForm.cs:line 40
+[2025-05-29 13:49:11] [INFO] Application exiting
+[2025-05-29 13:49:11] [INFO] Application closing...
+[2025-05-29 13:56:38] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:56:41] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:56:41] [INFO] User phamchau logged in successfully
+[2025-05-29 13:56:45] [INFO] User phamchau logged in successfully
+[2025-05-29 13:57:16] [INFO] Application exiting
+[2025-05-29 13:57:16] [INFO] Application closing...
+[2025-05-29 13:57:45] [INFO] Database connection configuration loaded successfully
+[2025-05-29 13:57:48] [INFO] User phamchau authenticated successfully
+[2025-05-29 13:57:48] [INFO] User phamchau logged in successfully
+[2025-05-29 13:58:06] [INFO] User phamchau logged in successfully
+[2025-05-29 13:58:09] [INFO] Application exiting
+[2025-05-29 13:58:09] [INFO] Application closing...
+[2025-05-29 14:05:14] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:05:18] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:05:18] [INFO] User phamchau logged in successfully
+[2025-05-29 14:05:20] [INFO] User phamchau logged in successfully
+[2025-05-29 14:06:12] [INFO] User d123 updated successfully
+[2025-05-29 14:06:59] [INFO] Application exiting
+[2025-05-29 14:06:59] [INFO] Application closing...
+[2025-05-29 14:07:12] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:07:14] [ERROR] Error getting user by username phamchau: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 89
+[2025-05-29 14:07:14] [ERROR] Error in AuthenticateUser: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+[2025-05-29 14:07:14] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:07:23] [ERROR] Error getting user by username phamchau: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 89
+[2025-05-29 14:07:23] [ERROR] Error in AuthenticateUser: Connection is already open
+Exception: System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+[2025-05-29 14:07:23] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> System.InvalidOperationException: Connection is already open
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at ORCLE_CK.Data.Repositories.UserRepository.GetUserByUsername(String username) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 114
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 148
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:07:29] [INFO] Application closing...
+[2025-05-29 14:10:49] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:10:53] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:10:53] [INFO] User phamchau logged in successfully
+[2025-05-29 14:10:54] [INFO] User phamchau logged in successfully
+[2025-05-29 14:15:26] [INFO] Application exiting
+[2025-05-29 14:15:26] [INFO] Application closing...
+[2025-05-29 14:15:39] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:15:42] [ERROR] Error updating last login for user 3: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 281
+[2025-05-29 14:15:42] [ERROR] Error in AuthenticateUser: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 291
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 14:15:42] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 291
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:15:46] [INFO] Application closing...
+[2025-05-29 14:16:15] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:16:17] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:16:17] [INFO] User phamchau logged in successfully
+[2025-05-29 14:16:18] [INFO] User phamchau logged in successfully
+[2025-05-29 14:16:29] [INFO] Application exiting
+[2025-05-29 14:16:29] [INFO] Application closing...
+[2025-05-29 14:18:27] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:18:29] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:18:29] [INFO] User phamchau logged in successfully
+[2025-05-29 14:18:30] [INFO] User phamchau logged in successfully
+[2025-05-29 14:20:29] [INFO] Application exiting
+[2025-05-29 14:20:29] [INFO] Application closing...
+[2025-05-29 14:20:56] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:21:01] [ERROR] Error updating last login for user 3: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 295
+[2025-05-29 14:21:01] [ERROR] Error in AuthenticateUser: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 305
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 14:21:01] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 305
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:21:02] [INFO] Application closing...
+[2025-05-29 14:21:29] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:21:41] [ERROR] Error updating last login for user 3: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 295
+[2025-05-29 14:21:41] [ERROR] Error in AuthenticateUser: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 305
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 14:21:41] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 305
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:21:44] [INFO] Application closing...
+[2025-05-29 14:23:10] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:23:14] [ERROR] Error updating last login for user 3: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 297
+[2025-05-29 14:23:14] [ERROR] Error in AuthenticateUser: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 307
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+[2025-05-29 14:23:14] [ERROR] Login error: Lỗi xác thực người dùng
+Exception: ORCLE_CK.Exceptions.ServiceException: Lỗi xác thực người dùng ---> Oracle.ManagedDataAccess.Client.OracleException: ORA-02291: integrity constraint (MYUSER.FK_AUDIT_LOG_USER) violated - parent key not found
+ORA-06512: at "MYUSER.TRACK_USER_ACTIONS", line 31
+ORA-04088: error during execution of trigger 'MYUSER.TRACK_USER_ACTIONS'
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.UserRepository.UpdateLastLogin(Int32 userId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\UserRepository.cs:line 307
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 155
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.UserService.AuthenticateUser(String username, String password) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\UserService.cs:line 172
+   at ORCLE_CK.Forms.LoginForm.btnLogin_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\LoginForm.cs:line 83
+[2025-05-29 14:23:16] [INFO] Application closing...
+[2025-05-29 14:25:46] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:25:49] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:25:49] [INFO] User phamchau logged in successfully
+[2025-05-29 14:25:50] [INFO] User phamchau logged in successfully
+[2025-05-29 14:26:43] [INFO] User d123 updated successfully
+[2025-05-29 14:27:05] [INFO] Application exiting
+[2025-05-29 14:27:05] [INFO] Application closing...
+[2025-05-29 14:30:22] [INFO] Database connection configuration loaded successfully
+[2025-05-29 14:30:28] [INFO] User phamchau authenticated successfully
+[2025-05-29 14:30:28] [INFO] User phamchau logged in successfully
+[2025-05-29 14:30:29] [INFO] User phamchau logged in successfully
+[2025-05-29 14:30:47] [INFO] User d123 updated successfully
+[2025-05-29 14:31:35] [INFO] Application exiting
+[2025-05-29 14:31:35] [INFO] Application closing...
+[2025-05-29 15:03:19] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:03:24] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:03:24] [INFO] User phamchau logged in successfully
+[2025-05-29 15:03:24] [INFO] User phamchau logged in successfully
+[2025-05-29 15:03:48] [INFO] User 31 deleted successfully
+[2025-05-29 15:05:14] [INFO] Course JS căn bản created successfully
+[2025-05-29 15:11:51] [INFO] Application exiting
+[2025-05-29 15:11:51] [INFO] Application closing...
+[2025-05-29 15:12:03] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:12:07] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:12:07] [INFO] User phamchau logged in successfully
+[2025-05-29 15:12:08] [INFO] User phamchau logged in successfully
+[2025-05-29 15:12:31] [INFO] Password changed for user 3
+[2025-05-29 15:12:31] [INFO] Password changed by admin for user 3
+[2025-05-29 15:12:40] [INFO] Application exiting
+[2025-05-29 15:12:40] [INFO] Application closing...
+[2025-05-29 15:13:01] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:13:05] [INFO] User tranbinh authenticated successfully
+[2025-05-29 15:13:05] [INFO] User tranbinh logged in successfully
+[2025-05-29 15:13:05] [INFO] User tranbinh logged in successfully
+[2025-05-29 15:13:24] [INFO] Password changed for user 2
+[2025-05-29 15:13:24] [INFO] Password changed for user 2
+[2025-05-29 15:13:27] [INFO] Application exiting
+[2025-05-29 15:13:27] [INFO] Application closing...
+[2025-05-29 15:13:40] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:13:44] [INFO] User lehoangdat authenticated successfully
+[2025-05-29 15:13:44] [INFO] User lehoangdat logged in successfully
+[2025-05-29 15:13:45] [INFO] User lehoangdat logged in successfully
+[2025-05-29 15:13:58] [INFO] Password changed for user 4
+[2025-05-29 15:13:58] [INFO] Password changed for user 4
+[2025-05-29 15:14:02] [INFO] Application exiting
+[2025-05-29 15:14:02] [INFO] Application closing...
+[2025-05-29 15:15:31] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:15:33] [WARNING] Authentication failed for user phamchau
+[2025-05-29 15:15:43] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:15:43] [INFO] User phamchau logged in successfully
+[2025-05-29 15:15:44] [INFO] User phamchau logged in successfully
+[2025-05-29 15:16:36] [INFO] Application exiting
+[2025-05-29 15:16:36] [INFO] Application closing...
+[2025-05-29 15:32:46] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:32:48] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 15:32:56] [INFO] User tranbinh authenticated successfully
+[2025-05-29 15:32:56] [INFO] User tranbinh logged in successfully
+[2025-05-29 15:32:57] [INFO] User tranbinh logged in successfully
+[2025-05-29 15:33:50] [INFO] Application exiting
+[2025-05-29 15:33:50] [INFO] Application closing...
+[2025-05-29 15:34:02] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:34:06] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:34:06] [INFO] User phamchau logged in successfully
+[2025-05-29 15:34:07] [INFO] User phamchau logged in successfully
+[2025-05-29 15:34:44] [INFO] Application exiting
+[2025-05-29 15:34:44] [INFO] Application closing...
+[2025-05-29 15:36:22] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:36:27] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:36:27] [INFO] User phamchau logged in successfully
+[2025-05-29 15:36:27] [INFO] User phamchau logged in successfully
+[2025-05-29 15:37:25] [INFO] User d123 updated successfully
+[2025-05-29 15:37:49] [INFO] User 31 deleted successfully
+[2025-05-29 15:38:18] [INFO] Course JS căn bản updated successfully
+[2025-05-29 15:38:29] [INFO] Course 42 deleted successfully
+[2025-05-29 15:39:05] [INFO] Lesson Xử lý Sự kiện updated successfully
+[2025-05-29 15:39:22] [INFO] Lesson Xử lý Sự kiện updated successfully
+[2025-05-29 15:39:58] [INFO] Lesson ha ba created successfully
+[2025-05-29 15:40:18] [INFO] Lesson 41 deleted successfully
+[2025-05-29 15:43:36] [INFO] Application exiting
+[2025-05-29 15:43:36] [INFO] Application closing...
+[2025-05-29 15:43:41] [INFO] Application closing...
+[2025-05-29 15:51:53] [INFO] Database connection configuration loaded successfully
+[2025-05-29 15:51:56] [WARNING] Authentication failed for user phamchau
+[2025-05-29 15:52:04] [INFO] User phamchau authenticated successfully
+[2025-05-29 15:52:04] [INFO] User phamchau logged in successfully
+[2025-05-29 15:52:05] [INFO] User phamchau logged in successfully
+[2025-05-29 15:52:34] [INFO] Application exiting
+[2025-05-29 15:52:34] [INFO] Application closing...
+[2025-05-29 16:03:58] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:04:03] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:04:03] [INFO] User phamchau logged in successfully
+[2025-05-29 16:04:03] [INFO] User phamchau logged in successfully
+[2025-05-29 16:05:58] [INFO] Application exiting
+[2025-05-29 16:05:58] [INFO] Application closing...
+[2025-05-29 16:10:29] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:10:33] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:10:33] [INFO] User phamchau logged in successfully
+[2025-05-29 16:10:34] [INFO] User phamchau logged in successfully
+[2025-05-29 16:11:49] [INFO] Application exiting
+[2025-05-29 16:11:49] [INFO] Application closing...
+[2025-05-29 16:21:24] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:21:28] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:21:28] [INFO] User phamchau logged in successfully
+[2025-05-29 16:21:29] [INFO] User phamchau logged in successfully
+[2025-05-29 16:23:02] [INFO] Application exiting
+[2025-05-29 16:23:02] [INFO] Application closing...
+[2025-05-29 16:24:17] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:24:20] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:24:20] [INFO] User phamchau logged in successfully
+[2025-05-29 16:24:21] [INFO] User phamchau logged in successfully
+[2025-05-29 16:25:14] [INFO] Application exiting
+[2025-05-29 16:25:14] [INFO] Application closing...
+[2025-05-29 16:28:28] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:28:33] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:28:33] [INFO] User phamchau logged in successfully
+[2025-05-29 16:28:33] [INFO] User phamchau logged in successfully
+[2025-05-29 16:29:22] [INFO] Application exiting
+[2025-05-29 16:29:22] [INFO] Application closing...
+[2025-05-29 16:32:59] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:33:02] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:33:02] [INFO] User phamchau logged in successfully
+[2025-05-29 16:33:03] [INFO] User phamchau logged in successfully
+[2025-05-29 16:33:37] [INFO] Application exiting
+[2025-05-29 16:33:37] [INFO] Application closing...
+[2025-05-29 16:34:03] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:34:06] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:34:06] [INFO] User phamchau logged in successfully
+[2025-05-29 16:34:07] [INFO] User phamchau logged in successfully
+[2025-05-29 16:34:39] [INFO] Application exiting
+[2025-05-29 16:34:39] [INFO] Application closing...
+[2025-05-29 16:38:33] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:38:38] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:38:38] [INFO] User phamchau logged in successfully
+[2025-05-29 16:38:39] [INFO] User phamchau logged in successfully
+[2025-05-29 16:39:23] [INFO] Application exiting
+[2025-05-29 16:39:23] [INFO] Application closing...
+[2025-05-29 16:44:55] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:44:59] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:44:59] [INFO] User phamchau logged in successfully
+[2025-05-29 16:44:59] [INFO] User phamchau logged in successfully
+[2025-05-29 16:52:42] [INFO] Application exiting
+[2025-05-29 16:52:42] [INFO] Application closing...
+[2025-05-29 16:52:57] [INFO] Database connection configuration loaded successfully
+[2025-05-29 16:53:00] [INFO] User phamchau authenticated successfully
+[2025-05-29 16:53:00] [INFO] User phamchau logged in successfully
+[2025-05-29 16:53:01] [INFO] User phamchau logged in successfully
+[2025-05-29 16:56:27] [INFO] Application exiting
+[2025-05-29 16:56:27] [INFO] Application closing...
+[2025-05-29 17:02:58] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:03:01] [INFO] User phamchau authenticated successfully
+[2025-05-29 17:03:01] [INFO] User phamchau logged in successfully
+[2025-05-29 17:03:02] [INFO] User phamchau logged in successfully
+[2025-05-29 17:06:27] [INFO] Application exiting
+[2025-05-29 17:06:27] [INFO] Application closing...
+[2025-05-29 17:07:30] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:07:34] [INFO] User phamchau authenticated successfully
+[2025-05-29 17:07:34] [INFO] User phamchau logged in successfully
+[2025-05-29 17:07:34] [INFO] User phamchau logged in successfully
+[2025-05-29 17:12:50] [INFO] User u212 created successfully
+[2025-05-29 17:13:11] [INFO] User d123 updated successfully
+[2025-05-29 17:14:40] [INFO] User d12345 updated successfully
+[2025-05-29 17:14:47] [INFO] User 31 deleted successfully
+[2025-05-29 17:16:24] [INFO] Application exiting
+[2025-05-29 17:16:24] [INFO] Application closing...
+[2025-05-29 17:17:30] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:17:34] [INFO] User phamchau authenticated successfully
+[2025-05-29 17:17:34] [INFO] User phamchau logged in successfully
+[2025-05-29 17:17:35] [INFO] User phamchau logged in successfully
+[2025-05-29 17:18:43] [INFO] Application exiting
+[2025-05-29 17:18:43] [INFO] Application closing...
+[2025-05-29 17:19:10] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:19:14] [INFO] User phamchau authenticated successfully
+[2025-05-29 17:19:14] [INFO] User phamchau logged in successfully
+[2025-05-29 17:19:14] [INFO] User phamchau logged in successfully
+[2025-05-29 17:20:57] [INFO] Course Khóa học căn bản created successfully
+[2025-05-29 17:22:42] [INFO] Course Khóa học căn bản updated successfully
+[2025-05-29 17:23:08] [INFO] Course 43 deleted successfully
+[2025-05-29 17:23:40] [INFO] Lesson 123 created successfully
+[2025-05-29 17:23:47] [INFO] Lesson 42 deleted successfully
+[2025-05-29 17:24:54] [INFO] Application exiting
+[2025-05-29 17:24:55] [INFO] Application closing...
+[2025-05-29 17:25:15] [INFO] Application closing...
+[2025-05-29 17:26:13] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:26:17] [INFO] User tranbinh authenticated successfully
+[2025-05-29 17:26:17] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:26:18] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:26:24] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:26:24] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:26:24] [ERROR] Error loading dashboard data: Không thể tải khóa học của giảng viên
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải khóa học của giảng viên ---> System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 111
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadStatistics() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 56
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 42
+[2025-05-29 17:26:47] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:26:47] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:26:47] [ERROR] Error loading courses: Không thể tải khóa học của giảng viên
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải khóa học của giảng viên ---> System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 111
+   at ORCLE_CK.Forms.InstructorCourseManagementForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorCourseManagementForm.cs:line 45
+[2025-05-29 17:26:55] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:26:55] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:26:55] [ERROR] Error loading dashboard data: Không thể tải khóa học của giảng viên
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải khóa học của giảng viên ---> System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 111
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadStatistics() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 56
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 42
+[2025-05-29 17:27:02] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:27:02] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:27:02] [ERROR] Error loading courses: Không thể tải khóa học của giảng viên
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải khóa học của giảng viên ---> System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 111
+   at ORCLE_CK.Forms.InstructorCourseManagementForm.LoadCourses() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorCourseManagementForm.cs:line 45
+[2025-05-29 17:27:09] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:27:09] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:27:17] [INFO] Application exiting
+[2025-05-29 17:27:17] [INFO] Application closing...
+[2025-05-29 17:31:27] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:31:30] [INFO] User tranbinh authenticated successfully
+[2025-05-29 17:31:30] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:31:30] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:31:33] [ERROR] Error getting courses by instructor 2: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 220
+[2025-05-29 17:31:33] [ERROR] Error in GetCoursesByInstructor: Unable to find specified column in result set
+Exception: System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+[2025-05-29 17:31:33] [ERROR] Error loading dashboard data: Không thể tải khóa học của giảng viên
+Exception: ORCLE_CK.Exceptions.ServiceException: Không thể tải khóa học của giảng viên ---> System.IndexOutOfRangeException: Unable to find specified column in result set
+   at OracleInternal.ServiceObjects.OracleDataReaderImpl.GetColumnOrdinal(String colName)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.GetOrdinal(String name)
+   at Oracle.ManagedDataAccess.Client.OracleDataReader.get_Item(String columnName)
+   at ORCLE_CK.Data.Repositories.CourseRepository.MapReaderToCourse(IDataReader reader) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 237
+   at ORCLE_CK.Data.Repositories.CourseRepository.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\CourseRepository.cs:line 229
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 106
+   --- End of inner exception stack trace ---
+   at ORCLE_CK.Services.CourseService.GetCoursesByInstructor(Int32 instructorId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\CourseService.cs:line 111
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadStatistics() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 56
+   at ORCLE_CK.Forms.InstructorDashboardForm.LoadDashboardData() in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\InstructorDashboardForm.cs:line 42
+[2025-05-29 17:31:39] [INFO] Application exiting
+[2025-05-29 17:31:39] [INFO] Application closing...
+[2025-05-29 17:33:54] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:33:59] [INFO] User tranbinh authenticated successfully
+[2025-05-29 17:33:59] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:33:59] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:36:28] [INFO] Course JS cơ bản created successfully
+[2025-05-29 17:39:14] [INFO] Application exiting
+[2025-05-29 17:39:14] [INFO] Application closing...
+[2025-05-29 17:41:21] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:41:24] [INFO] User phamchau authenticated successfully
+[2025-05-29 17:41:24] [INFO] User phamchau logged in successfully
+[2025-05-29 17:41:24] [INFO] User phamchau logged in successfully
+[2025-05-29 17:41:27] [INFO] Application exiting
+[2025-05-29 17:41:27] [INFO] Application closing...
+[2025-05-29 17:41:35] [INFO] Database connection configuration loaded successfully
+[2025-05-29 17:41:38] [INFO] User tranbinh authenticated successfully
+[2025-05-29 17:41:38] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:41:39] [INFO] User tranbinh logged in successfully
+[2025-05-29 17:42:42] [INFO] Course JS cơ bản updated successfully
+[2025-05-29 17:44:00] [ERROR] Error enrolling student 30 to course 5: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 79
+[2025-05-29 17:44:00] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 84
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 17:44:39] [ERROR] Error enrolling student 10 to course 5: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 79
+[2025-05-29 17:44:39] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 84
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 17:45:00] [INFO] Course 44 deleted successfully
+[2025-05-29 17:50:31] [INFO] Lesson hai created successfully
+[2025-05-29 17:50:41] [INFO] Lesson 43 deleted successfully
+[2025-05-29 17:53:11] [INFO] Assignment 1212 created successfully
+[2025-05-29 17:53:24] [INFO] Assignment 1212 updated successfully
+[2025-05-29 17:53:33] [INFO] Assignment 21 deleted successfully
+[2025-05-29 18:31:53] [INFO] Application exiting
+[2025-05-29 18:31:53] [INFO] Application closing...
+[2025-05-29 18:32:09] [INFO] Database connection configuration loaded successfully
+[2025-05-29 18:32:14] [INFO] User tranbinh authenticated successfully
+[2025-05-29 18:32:14] [INFO] User tranbinh logged in successfully
+[2025-05-29 18:32:14] [INFO] User tranbinh logged in successfully
+[2025-05-29 18:59:35] [ERROR] Error enrolling student 30 to course 1: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 79
+[2025-05-29 18:59:35] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 84
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 19:00:35] [ERROR] Error enrolling student 7 to course 1: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 79
+[2025-05-29 19:00:35] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 84
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 19:01:35] [ERROR] Error enrolling student 32 to course 1: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 79
+[2025-05-29 19:01:35] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 84
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 19:04:32] [INFO] Application exiting
+[2025-05-29 19:04:32] [INFO] Application closing...
+[2025-05-29 19:06:25] [INFO] Database connection configuration loaded successfully
+[2025-05-29 19:06:27] [WARNING] Authentication failed for user tranbinh
+[2025-05-29 19:06:34] [INFO] User tranbinh authenticated successfully
+[2025-05-29 19:06:34] [INFO] User tranbinh logged in successfully
+[2025-05-29 19:06:35] [INFO] User tranbinh logged in successfully
+[2025-05-29 19:07:10] [ERROR] Error enrolling student 10 to course 2: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 80
+[2025-05-29 19:07:10] [ERROR] Error adding student: ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+Exception: Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-02290: check constraint (MYUSER.SYS_C008016) violated
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at ORCLE_CK.Data.Repositories.EnrollmentRepository.Create(Enrollment enrollment) in E:\HK5\ORCLE_CK\ORCLE_CK\Data\Repositories\EnrollmentRepository.cs:line 153
+   at ORCLE_CK.Services.EnrollmentService.EnrollStudent(Int32 studentId, Int32 courseId) in E:\HK5\ORCLE_CK\ORCLE_CK\Services\EnrollmentService.cs:line 85
+   at ORCLE_CK.Forms.AddStudentToCourseForm.BtnAdd_Click(Object sender, EventArgs e) in E:\HK5\ORCLE_CK\ORCLE_CK\Forms\AddStudentToCourseFor.cs:line 110
+[2025-05-29 19:11:43] [INFO] Application exiting
+[2025-05-29 19:11:43] [INFO] Application closing...
+[2025-05-29 19:11:58] [INFO] Database connection configuration loaded successfully
+[2025-05-29 19:12:03] [INFO] User tranbinh authenticated successfully
+[2025-05-29 19:12:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 19:12:03] [INFO] User tranbinh logged in successfully
+[2025-05-29 19:14:42] [INFO] Application exiting
+[2025-05-29 19:14:42] [INFO] Application closing...

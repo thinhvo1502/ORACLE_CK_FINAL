@@ -22,6 +22,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"SELECT a.assignment_id, a.course_id, a.title, a.description, a.due_date,
                                   a.created_at, a.updated_at, a.is_active, a.max_score,
@@ -62,6 +63,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"SELECT a.assignment_id, a.course_id, a.title, a.description, a.due_date,
                                   a.created_at, a.updated_at, a.is_active, a.max_score,
@@ -101,6 +104,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"INSERT INTO Assignments (course_id, title, description, due_date, max_score, is_active) 
                                   VALUES (:courseId, :title, :description, :dueDate, :maxScore, 1)";
@@ -133,6 +138,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"UPDATE Assignments SET title = :title, description = :description, due_date = :dueDate,
                                   max_score = :maxScore, updated_at = SYSDATE, is_active = :isActive 
@@ -167,6 +174,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = "UPDATE Assignments SET is_active = 0 WHERE assignment_id = :assignmentId";
 
@@ -196,6 +205,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"SELECT s.submission_id, s.assignment_id, s.user_id, s.file_url,
                                   s.submitted_at, s.grade, s.feedback, s.status,
@@ -239,6 +250,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"UPDATE Submissions SET grade = :grade, feedback = :feedback, 
                                   status = 'graded' 

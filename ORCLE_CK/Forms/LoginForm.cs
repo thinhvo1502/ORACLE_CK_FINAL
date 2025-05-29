@@ -1,10 +1,13 @@
-﻿using ORCLE_CK.Constants;
+﻿using Oracle.ManagedDataAccess.Client;
+using ORCLE_CK.Constants;
+using ORCLE_CK.Data;
 using ORCLE_CK.Models;
 using ORCLE_CK.Services;
 using ORCLE_CK.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -25,6 +28,35 @@ namespace ORCLE_CK.Forms
         {
             userService = new UserService();
             InitializeComponent();
+        }
+
+        // Hàm mở kết nối và gán identifier
+        void OpenConnectionWithSessionIdentifier(int user_id)
+        {
+            //var connStr = ConfigurationManager.ConnectionStrings["OracleConnection"].ConnectionString;
+
+            using (var conn = DatabaseConnection.GetConnection()) 
+            {
+                conn.Open();
+
+                using (OracleCommand cmd = conn.CreateCommand())
+                {
+                    // Gán CLIENT_IDENTIFIER
+                    cmd.CommandText = "BEGIN DBMS_SESSION.SET_IDENTIFIER(:id); END;";
+                    cmd.Parameters.Add("id", OracleDbType.Int32).Value = user_id;
+                    cmd.ExecuteNonQuery();
+
+                    // Kiểm tra lại trong cùng session
+                    cmd.Parameters.Clear();
+                    cmd.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CLIENT_IDENTIFIER') FROM dual";
+
+                    var result = cmd.ExecuteScalar();
+                    MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
+                }
+
+
+                // Bây giờ bạn có thể tiếp tục làm việc với session có identifier
+            }
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -59,7 +91,8 @@ namespace ORCLE_CK.Forms
                     {
                         // TODO: Implement remember me functionality
                     }
-
+                    OpenConnectionWithSessionIdentifier(CurrentUser.UserId);
+                    DatabaseConnection.setId(CurrentUser.UserId);
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }

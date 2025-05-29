@@ -148,9 +148,10 @@ namespace ORCLE_CK.Services
                 var user = userRepository.GetUserByUsername(username);
 
                 
-                //if (user != null && PasswordHelper.VerifyPassword(password, user.Password))
-                if (user != null)
+                if (user != null && PasswordHelper.VerifyPassword(password, user.Password))
+                    //if (user != null)
                 {
+
                     // Update last login time
                     userRepository.UpdateLastLogin(user.UserId);
                     user.LastLoginAt = DateTime.Now;

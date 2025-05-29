@@ -17,6 +17,8 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
+
 
             var sql = @"SELECT q.QUIZ_ID, q.COURSE_ID, q.TITLE, q.DESCRIPTION, q.TIME_LIMIT, 
                                q.TOTAL_SCORE, q.CREATED_AT, q.UPDATED_AT, q.IS_ACTIVE,
@@ -59,6 +61,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"SELECT q.QUIZ_ID, q.COURSE_ID, q.TITLE, q.DESCRIPTION, q.TIME_LIMIT, 
                                q.TOTAL_SCORE, q.CREATED_AT, q.UPDATED_AT, q.IS_ACTIVE,
@@ -95,6 +98,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"INSERT INTO QUIZZES (COURSE_ID, TITLE, DESCRIPTION, TIME_LIMIT, 
                                            TOTAL_SCORE, CREATED_AT, IS_ACTIVE)
@@ -117,6 +121,8 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
+
 
             var sql = @"UPDATE QUIZZES SET 
                                TITLE = :title,
@@ -143,6 +149,8 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
+
 
             // Soft delete
             var sql = "UPDATE QUIZZES SET IS_ACTIVE = 0, UPDATED_AT = :updatedAt WHERE QUIZ_ID = :quizId";
@@ -160,7 +168,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
-
+            DatabaseConnection.setUp(connection);
             var sql = @"SELECT QUESTION_ID, QUIZ_ID, QUESTION, 
                                OPTION_A, OPTION_B, OPTION_C, OPTION_D, 
                                CORRECT_ANSWER, POINTS, ORDER_NUMBER
@@ -196,6 +204,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"SELECT QUESTION_ID, QUIZ_ID, QUESTION, 
                                OPTION_A, OPTION_B, OPTION_C, OPTION_D, 
@@ -231,6 +240,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"INSERT INTO QUIZ_QUESTIONS (QUIZ_ID, QUESTION, 
                                                    OPTION_A, OPTION_B, OPTION_C, OPTION_D, 
@@ -256,6 +266,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"UPDATE QUIZ_QUESTIONS SET 
                                QUESTION = :question,
@@ -286,6 +297,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             // Hard delete for questions
             var sql = "DELETE FROM QUIZ_QUESTIONS WHERE QUESTION_ID = :questionId";
@@ -302,6 +314,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
 
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
@@ -346,6 +359,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
                                r.TOTAL_QUESTIONS, r.CORRECT_ANSWERS, r.TIME_TAKEN,
@@ -393,7 +407,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
-
+            DatabaseConnection.setUp(connection);
             var sql = @"SELECT r.RESULT_ID, r.QUIZ_ID, r.USER_ID, r.SCORE, r.TAKEN_AT,
                                r.TOTAL_QUESTIONS, r.CORRECT_ANSWERS, r.TIME_TAKEN,
                                u.FIRST_NAME || ' ' || u.LAST_NAME as STUDENT_NAME,
@@ -434,6 +448,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var sql = @"INSERT INTO QUIZ_RESULTS (
                             QUIZ_ID, USER_ID, SCORE, TAKEN_AT,

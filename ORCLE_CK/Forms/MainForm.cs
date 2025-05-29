@@ -49,27 +49,31 @@ namespace ORCLE_CK.Forms
             // Admin menus
             if (currentUser.Role.ToLower() == "admin")
             {
+                // User Management Menu
                 var userMenu = new ToolStripMenuItem("Quản lý người dùng");
                 userMenu.DropDownItems.Add("Danh sách người dùng", null, UserListMenuItem_Click);
                 userMenu.DropDownItems.Add("Thêm người dùng", null, AddUserMenuItem_Click);
-                userMenu.DropDownItems.Add("Báo cáo người dùng", null, UserReportMenuItem_Click);
                 menuStrip.Items.Add(userMenu);
 
+                // Course Management Menu
                 var courseMenu = new ToolStripMenuItem("Quản lý khóa học");
                 courseMenu.DropDownItems.Add("Danh sách khóa học", null, CourseListMenuItem_Click);
                 courseMenu.DropDownItems.Add("Thêm khóa học", null, AddCourseMenuItem_Click);
-                courseMenu.DropDownItems.Add("Báo cáo khóa học", null, CourseReportMenuItem_Click);
                 menuStrip.Items.Add(courseMenu);
 
-                var reportMenu = new ToolStripMenuItem("Báo cáo");
-                reportMenu.DropDownItems.Add("Thống kê tổng quan", null, OverviewReportMenuItem_Click);
-                reportMenu.DropDownItems.Add("Báo cáo học viên", null, StudentReportMenuItem_Click);
-                reportMenu.DropDownItems.Add("Báo cáo giảng viên", null, InstructorReportMenuItem_Click);
-                menuStrip.Items.Add(reportMenu);
+                // Teaching Menu (Admin can also teach)
+                var teachingMenu = new ToolStripMenuItem("Giảng dạy");
+                teachingMenu.DropDownItems.Add("Bảng điều khiển", null, InstructorDashboardMenuItem_Click);
+                teachingMenu.DropDownItems.Add("Khóa học của tôi", null, MyCoursesMenuItem_Click);
+                teachingMenu.DropDownItems.Add("Quản lý bài học", null, LessonManagementMenuItem_Click);
+                teachingMenu.DropDownItems.Add("Quản lý học viên", null, StudentManagementMenuItem_Click);
+                teachingMenu.DropDownItems.Add("Quản lý bài tập", null, AssignmentManagementMenuItem_Click);
+                teachingMenu.DropDownItems.Add("Quản lý quiz", null, QuizManagementMenuItem_Click);
+                menuStrip.Items.Add(teachingMenu);
             }
 
             // Instructor menus
-            if (currentUser.Role.ToLower() == "instructor" || currentUser.Role.ToLower() == "admin")
+            if (currentUser.Role.ToLower() == "instructor")
             {
                 var teachingMenu = new ToolStripMenuItem("Giảng dạy");
                 teachingMenu.DropDownItems.Add("Bảng điều khiển", null, InstructorDashboardMenuItem_Click);
@@ -88,15 +92,11 @@ namespace ORCLE_CK.Forms
                 learningMenu.DropDownItems.Add("Bảng điều khiển", null, StudentDashboardMenuItem_Click);
                 learningMenu.DropDownItems.Add("Khóa học của tôi", null, MyEnrolledCoursesMenuItem_Click);
                 learningMenu.DropDownItems.Add("Tìm khóa học", null, FindCourseMenuItem_Click);
-                learningMenu.DropDownItems.Add("Bài tập của tôi", null, MyAssignmentsMenuItem_Click);
-                learningMenu.DropDownItems.Add("Kết quả quiz", null, MyQuizResultsMenuItem_Click);
-                learningMenu.DropDownItems.Add("Chứng chỉ", null, MyCertificatesMenuItem_Click);
                 menuStrip.Items.Add(learningMenu);
             }
 
             // Help Menu
             var helpMenu = new ToolStripMenuItem("Trợ giúp");
-            helpMenu.DropDownItems.Add("Hướng dẫn sử dụng", null, UserGuideMenuItem_Click);
             helpMenu.DropDownItems.Add("Về chương trình", null, AboutMenuItem_Click);
 
             menuStrip.Items.Add(systemMenu);
@@ -131,10 +131,10 @@ namespace ORCLE_CK.Forms
                        $"Vai trò: {currentUser.RoleDisplayName}\n\n" +
                        $"Hôm nay là {DateTime.Now:dddd, dd/MM/yyyy}\n\n" +
                        "Vui lòng chọn chức năng từ menu trên.",
-                Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular),
+                Font = new Font("Segoe UI", 16F, FontStyle.Regular),
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Fill,
-                ForeColor = Color.DarkBlue
+                ForeColor = Color.FromArgb(0, 120, 215)
             };
 
             welcomePanel.Controls.Add(welcomeLabel);
@@ -150,7 +150,7 @@ namespace ORCLE_CK.Forms
 
         private void ChangePasswordMenuItem_Click(object sender, EventArgs e)
         {
-            using var changePasswordForm = new ChangePasswordForm(currentUser.UserId, false);
+            using var changePasswordForm = new ChangePasswordForm(currentUser.UserId, currentUser.Role == "admin");
             changePasswordForm.ShowDialog();
         }
 
@@ -171,7 +171,7 @@ namespace ORCLE_CK.Forms
 
         private void UserReportMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -192,25 +192,25 @@ namespace ORCLE_CK.Forms
 
         private void CourseReportMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void OverviewReportMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void StudentReportMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void InstructorReportMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -301,19 +301,19 @@ namespace ORCLE_CK.Forms
 
         private void MyAssignmentsMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MyQuizResultsMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MyCertificatesMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -325,7 +325,7 @@ namespace ORCLE_CK.Forms
 
         private void UserGuideMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(MessageConstants.FEATURE_UNDER_DEVELOPMENT, "Thông báo",
+            MessageBox.Show("Tính năng đang được phát triển", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

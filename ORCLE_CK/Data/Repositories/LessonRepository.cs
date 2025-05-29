@@ -22,6 +22,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"SELECT l.lesson_id, l.course_id, l.title, l.content, l.video_url, 
                                   l.order_number, l.created_at, l.updated_at, l.is_active, l.duration,
@@ -61,6 +62,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"SELECT l.lesson_id, l.course_id, l.title, l.content, l.video_url, 
                                   l.order_number, l.created_at, l.updated_at, l.is_active, l.duration,
@@ -99,6 +102,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"INSERT INTO Lessons (course_id, title, content, video_url, order_number, duration, is_active) 
                                   VALUES (:courseId, :title, :content, :videoUrl, :orderNumber, :duration, 1)";
@@ -132,6 +137,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"UPDATE Lessons SET title = :title, content = :content, video_url = :videoUrl, 
                                   order_number = :orderNumber, duration = :duration, updated_at = SYSDATE, is_active = :isActive 
@@ -167,6 +174,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     // Soft delete - set is_active to 0
                     string sql = "UPDATE Lessons SET is_active = 0 WHERE lesson_id = :lessonId";
@@ -195,6 +204,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = "SELECT NVL(MAX(order_number), 0) + 1 FROM Lessons WHERE course_id = :courseId";
 
@@ -221,6 +232,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
                     using (var transaction = connection.BeginTransaction())
                     {
                         try
@@ -291,6 +303,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
                     using (var transaction = connection.BeginTransaction())
                     {
                         try

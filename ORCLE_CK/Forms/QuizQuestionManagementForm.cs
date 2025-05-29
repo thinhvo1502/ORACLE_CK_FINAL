@@ -74,15 +74,42 @@ namespace ORCLE_CK.Forms
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            if (listViewQuestions.SelectedItems.Count == 0) return;
+            if (listViewQuestions.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn câu hỏi cần xóa!", 
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             var selectedQuestion = (QuizQuestion)listViewQuestions.SelectedItems[0].Tag;
 
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa câu hỏi này?",
                 "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                // Implementation for delete question
-                LoadQuestions();
+                try
+                {
+                    if (quizService.DeleteQuizQuestion(selectedQuestion.QuestionId))
+                    {
+                        MessageBox.Show("Xóa câu hỏi thành công!", 
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                        // Cập nhật lại tổng điểm của quiz
+                        quizService.UpdateQuizTotalScore(quizId);
+                        
+                        // Tải lại danh sách câu hỏi
+                        LoadQuestions();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể xóa câu hỏi. Vui lòng thử lại!", 
+                            "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi xóa câu hỏi: {ex.Message}", 
+                        "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

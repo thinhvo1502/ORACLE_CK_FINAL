@@ -1,4 +1,5 @@
 ﻿using ORCLE_CK.Utils;
+using ORCLE_CK.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace ORCLE_CK.Data
     {
         private static readonly string connectionString;
         private static readonly int commandTimeout;
+        private static int userId;
 
         static DatabaseConnection()
         {
@@ -35,13 +37,35 @@ namespace ORCLE_CK.Data
                 throw;
             }
         }
+        public static void setId(int user_id)
+        {
+            userId = user_id;
+        }
+        public static void setUp(OracleConnection conn)
+        {
+            using (OracleCommand cmd = conn.CreateCommand())
+            {
+                MessageBox.Show("nè",userId.ToString());
+                // Gán CLIENT_IDENTIFIER
+                cmd.CommandText = "BEGIN DBMS_SESSION.SET_IDENTIFIER(:id); END;";
+                cmd.Parameters.Add("id", OracleDbType.Int32).Value = userId;
+                cmd.ExecuteNonQuery();
 
+                // Kiểm tra lại trong cùng session
+                cmd.Parameters.Clear();
+                cmd.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CLIENT_IDENTIFIER') FROM dual";
+
+                var result = cmd.ExecuteScalar();
+                MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
+            }
+        }
         public static OracleConnection GetConnection()
         {
             try
             {
-                var connection = new OracleConnection(connectionString);
-                return connection;
+                var conn = new OracleConnection(connectionString);
+                
+                return conn;
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ORCLE_CK.Forms
@@ -29,106 +30,95 @@ namespace ORCLE_CK.Forms
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        
+        private Panel panelButtons;
+
+
         private void InitializeComponent()
         {
-            this.listViewLessons = new ListView();
-            this.btnAdd = new Button();
-            this.btnEdit = new Button();
-            this.btnDelete = new Button();
-            this.btnRefresh = new Button();
-            this.btnMoveUp = new Button();
-            this.btnMoveDown = new Button();
-            this.statusStrip = new StatusStrip();
-            this.statusLabel = new ToolStripStatusLabel();
-
-            this.SuspendLayout();
-
-            // Form
             this.Text = "Quản lý bài học";
             this.Size = new Size(1000, 600);
-            this.StartPosition = FormStartPosition.CenterParent;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
+            this.Font = new Font("Segoe UI", 9F);
+            this.BackColor = Color.White;
 
-            // Buttons
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.Location = new Point(20, 20);
-            this.btnAdd.Size = new Size(80, 25);
-            this.btnAdd.BackColor = Color.Green;
-            this.btnAdd.ForeColor = Color.White;
-            this.btnAdd.Click += BtnAdd_Click;
+            // Panel chứa các nút
+            panelButtons = new Panel
+            {
+                Location = new Point(20, 10),
+                Size = new Size(940, 50),
+                BackColor = Color.WhiteSmoke
+            };
 
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.Location = new Point(110, 20);
-            this.btnEdit.Size = new Size(80, 25);
-            this.btnEdit.BackColor = Color.Orange;
-            this.btnEdit.ForeColor = Color.White;
-            this.btnEdit.Click += BtnEdit_Click;
+            // Các nút
+            btnAdd = CreateStyledButton("Thêm", Color.FromArgb(40, 167, 69), new EventHandler(BtnAdd_Click));
+            btnEdit = CreateStyledButton("Sửa", Color.FromArgb(255, 193, 7), new EventHandler(BtnEdit_Click));
+            btnDelete = CreateStyledButton("Xóa", Color.FromArgb(220, 53, 69), new EventHandler(BtnDelete_Click));
+            btnMoveUp = CreateStyledButton("Lên", Color.FromArgb(0, 123, 255), new EventHandler(BtnMoveUp_Click));
+            btnMoveDown = CreateStyledButton("Xuống", Color.FromArgb(0, 123, 255), new EventHandler(BtnMoveDown_Click));
+            btnRefresh = CreateStyledButton("Làm mới", Color.FromArgb(108, 117, 125), new EventHandler(BtnRefresh_Click));
 
-            this.btnDelete.Text = "Xóa";
-            this.btnDelete.Location = new Point(200, 20);
-            this.btnDelete.Size = new Size(80, 25);
-            this.btnDelete.BackColor = Color.Red;
-            this.btnDelete.ForeColor = Color.White;
-            this.btnDelete.Click += BtnDelete_Click;
+            int spacing = 10;
+            int x = 0;
+            foreach (var btn in new[] { btnAdd, btnEdit, btnDelete, btnMoveUp, btnMoveDown, btnRefresh })
+            {
+                btn.Location = new Point(x, 10);
+                panelButtons.Controls.Add(btn);
+                x += btn.Width + spacing;
+            }
 
-            this.btnMoveUp.Text = "Lên";
-            this.btnMoveUp.Location = new Point(290, 20);
-            this.btnMoveUp.Size = new Size(60, 25);
-            this.btnMoveUp.BackColor = Color.Blue;
-            this.btnMoveUp.ForeColor = Color.White;
-            this.btnMoveUp.Click += BtnMoveUp_Click;
+            // ListView hiển thị danh sách bài học
+            listViewLessons = new ListView
+            {
+                Location = new Point(20, 70),
+                Size = new Size(940, 440),
+                View = View.Details,
+                FullRowSelect = true,
+                GridLines = true,
+                MultiSelect = false,
+                Font = new Font("Segoe UI", 9F),
+                BackColor = Color.White,
+                ForeColor = Color.Black,
+                HeaderStyle = ColumnHeaderStyle.Clickable
+            };
+            listViewLessons.Columns.Add("ID", 60);
+            listViewLessons.Columns.Add("Thứ tự", 80);
+            listViewLessons.Columns.Add("Tiêu đề", 300);
+            listViewLessons.Columns.Add("Nội dung", 300);
+            listViewLessons.Columns.Add("Video URL", 200);
+            listViewLessons.Columns.Add("Thời lượng", 100);
+            listViewLessons.Columns.Add("Trạng thái", 80);
+            listViewLessons.DoubleClick += ListView_DoubleClick;
+            listViewLessons.SelectedIndexChanged += ListView_SelectedIndexChanged;
 
-            this.btnMoveDown.Text = "Xuống";
-            this.btnMoveDown.Location = new Point(360, 20);
-            this.btnMoveDown.Size = new Size(60, 25);
-            this.btnMoveDown.BackColor = Color.Blue;
-            this.btnMoveDown.ForeColor = Color.White;
-            this.btnMoveDown.Click += BtnMoveDown_Click;
+            // Status strip
+            statusStrip = new StatusStrip();
+            statusLabel = new ToolStripStatusLabel("Sẵn sàng");
+            statusStrip.Items.Add(statusLabel);
+            statusStrip.Location = new Point(0, 530);
+            statusStrip.Size = new Size(980, 22);
 
-            this.btnRefresh.Text = "Làm mới";
-            this.btnRefresh.Location = new Point(430, 20);
-            this.btnRefresh.Size = new Size(80, 25);
-            this.btnRefresh.BackColor = Color.Gray;
-            this.btnRefresh.ForeColor = Color.White;
-            this.btnRefresh.Click += BtnRefresh_Click;
+            // Thêm các control vào Form
+            this.Controls.Add(panelButtons);
+            this.Controls.Add(listViewLessons);
+            this.Controls.Add(statusStrip);
+        }
 
-            // ListView
-            this.listViewLessons.Location = new Point(20, 60);
-            this.listViewLessons.Size = new Size(940, 480);
-            this.listViewLessons.View = View.Details;
-            this.listViewLessons.FullRowSelect = true;
-            this.listViewLessons.GridLines = true;
-            this.listViewLessons.MultiSelect = false;
-            this.listViewLessons.Font = new Font("Microsoft Sans Serif", 9F);
-
-            this.listViewLessons.Columns.Add("ID", 60);
-            this.listViewLessons.Columns.Add("Thứ tự", 80);
-            this.listViewLessons.Columns.Add("Tiêu đề", 300);
-            this.listViewLessons.Columns.Add("Nội dung", 300);
-            this.listViewLessons.Columns.Add("Video URL", 200);
-            this.listViewLessons.Columns.Add("Thời lượng", 100);
-            this.listViewLessons.Columns.Add("Trạng thái", 80);
-
-            this.listViewLessons.DoubleClick += ListView_DoubleClick;
-            this.listViewLessons.SelectedIndexChanged += ListView_SelectedIndexChanged;
-
-            // Status Strip
-            this.statusStrip.Location = new Point(0, 550);
-            this.statusStrip.Size = new Size(980, 22);
-            this.statusLabel.Text = "Sẵn sàng";
-            this.statusStrip.Items.Add(this.statusLabel);
-
-            // Add controls
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnMoveUp);
-            this.Controls.Add(this.btnMoveDown);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.listViewLessons);
-            this.Controls.Add(this.statusStrip);
-
-            this.ResumeLayout(false);
+        private Button CreateStyledButton(string text, Color backColor, EventHandler clickHandler)
+        {
+            var btn = new Button
+            {
+                Text = text,
+                Size = new Size(90, 30),
+                BackColor = backColor,
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9F, FontStyle.Bold)
+            };
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Click += clickHandler;
+            return btn;
         }
 
         #endregion

@@ -21,7 +21,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
+                    DatabaseConnection.setUp(connection);
                     string sql = @"SELECT c.course_id, c.title, c.description, c.instructor_id, 
                                   c.created_at, c.updated_at, c.is_active,
                                   u.full_name as instructor_name,
@@ -57,6 +57,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"SELECT c.course_id, c.title, c.description, c.instructor_id, 
                                   c.created_at, c.updated_at, c.is_active,
@@ -96,6 +98,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"INSERT INTO Courses (title, description, instructor_id, is_active) 
                                   VALUES (:title, :description, :instructorId, 1)";
@@ -126,6 +130,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     string sql = @"UPDATE Courses SET title = :title, description = :description, 
                                   instructor_id = :instructorId, updated_at = SYSDATE, is_active = :isActive 
@@ -159,6 +165,8 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
+
 
                     // Soft delete - set is_active to 0
                     string sql = "UPDATE Courses SET is_active = 0 WHERE course_id = :courseId";
@@ -189,6 +197,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"SELECT c.course_id, c.title, c.description, c.instructor_id, 
                                   c.created_at, c.updated_at, c.is_active,

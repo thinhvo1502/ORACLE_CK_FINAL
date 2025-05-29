@@ -18,6 +18,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 SELECT e.enrollment_id, e.user_id, e.course_id, e.enrolled_at, 
@@ -74,6 +75,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 SELECT c.course_id, c.title, c.description, c.instructor_id,
@@ -119,6 +121,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = "SELECT COUNT(*) FROM enrollments WHERE user_id = :studentId AND course_id = :courseId";
 
@@ -134,6 +137,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 INSERT INTO enrollments (user_id, course_id, enrolled_at, status, progress)
@@ -143,7 +147,7 @@ namespace ORCLE_CK.Data.Repositories
             command.Parameters.Add(":userId", enrollment.UserId);
             command.Parameters.Add(":courseId", enrollment.CourseId);
             command.Parameters.Add(":enrolledAt", enrollment.EnrolledAt);
-            command.Parameters.Add(":status", (int)enrollment.Status);
+            command.Parameters.Add(":status", "active");
             command.Parameters.Add(":progress", enrollment.Progress);
 
             return command.ExecuteNonQuery() > 0;
@@ -153,6 +157,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 UPDATE enrollments 
@@ -172,6 +177,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 SELECT enrollment_id, user_id, course_id, enrolled_at, 
@@ -220,6 +226,7 @@ namespace ORCLE_CK.Data.Repositories
 
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = @"
                 SELECT e.enrollment_id, e.user_id, e.course_id, e.enrolled_at, 
@@ -270,6 +277,7 @@ namespace ORCLE_CK.Data.Repositories
         {
             using var connection = DatabaseConnection.GetConnection();
             connection.Open();
+            DatabaseConnection.setUp(connection);
 
             var query = "DELETE FROM enrollments WHERE enrollment_id = :enrollmentId";
 

@@ -36,11 +36,9 @@ namespace ORCLE_CK.Forms
             {
                 statusLabel.Text = "Đang tải dữ liệu...";
                 listViewResults.Items.Clear();
-                //MessageBox.Show("trước");
 
                 var results = quizService.GetQuizResults(quizId);
 
-                //MessageBox.Show("sau");
                 foreach (var result in results)
                 {
                     var item = new ListViewItem(result.StudentName);
@@ -96,8 +94,8 @@ namespace ORCLE_CK.Forms
             if (listViewResults.SelectedItems.Count == 0) return;
 
             var selectedResult = (QuizResult)listViewResults.SelectedItems[0].Tag;
-            using var detailForm = new QuizResultDetailForm(selectedResult);
-            detailForm.ShowDialog();
+            //using var detailForm = new QuizResultDetailForm(selectedResult);
+            //detailForm.ShowDialog();
         }
 
         private void BtnRefresh_Click(object sender, EventArgs e)

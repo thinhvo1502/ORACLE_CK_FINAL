@@ -42,61 +42,112 @@ namespace ORCLE_CK.Forms
 
             // Form
             this.Text = "Chỉnh sửa khóa học";
-            this.Size = new Size(550, 450);
+            this.Size = new Size(600, 500);
             this.StartPosition = FormStartPosition.CenterParent;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.BackColor = Color.White;
+            this.Font = new Font("Segoe UI", 9);
+
+            // Content Panel
+            var contentPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(20),
+                BackColor = Color.White
+            };
 
             // Title
-            var lblTitle = new Label { Text = "Tiêu đề:", Location = new Point(20, 20), Size = new Size(100, 23) };
-            this.txtTitle.Location = new Point(130, 20);
-            this.txtTitle.Size = new Size(380, 23);
+            var lblTitle = new Label 
+            { 
+                Text = "Tiêu đề:", 
+                Location = new Point(20, 20), 
+                Size = new Size(120, 25),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold)
+            };
+            this.txtTitle.Location = new Point(150, 20);
+            this.txtTitle.Size = new Size(380, 25);
+            this.txtTitle.Font = new Font("Segoe UI", 10);
+            this.txtTitle.BorderStyle = BorderStyle.FixedSingle;
 
             // Description
-            var lblDescription = new Label { Text = "Mô tả:", Location = new Point(20, 60), Size = new Size(100, 23) };
-            this.txtDescription.Location = new Point(130, 60);
+            var lblDescription = new Label 
+            { 
+                Text = "Mô tả:", 
+                Location = new Point(20, 60), 
+                Size = new Size(120, 25),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold)
+            };
+            this.txtDescription.Location = new Point(150, 60);
             this.txtDescription.Size = new Size(380, 150);
             this.txtDescription.Multiline = true;
             this.txtDescription.ScrollBars = ScrollBars.Vertical;
+            this.txtDescription.Font = new Font("Segoe UI", 10);
+            this.txtDescription.BorderStyle = BorderStyle.FixedSingle;
 
             // Instructor
-            var lblInstructor = new Label { Text = "Giảng viên:", Location = new Point(20, 230), Size = new Size(100, 23) };
-            this.cmbInstructor.Location = new Point(130, 230);
-            this.cmbInstructor.Size = new Size(380, 23);
+            var lblInstructor = new Label 
+            { 
+                Text = "Giảng viên:", 
+                Location = new Point(20, 230), 
+                Size = new Size(120, 25),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold)
+            };
+            this.cmbInstructor.Location = new Point(150, 230);
+            this.cmbInstructor.Size = new Size(380, 25);
             this.cmbInstructor.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cmbInstructor.DisplayMember = "FullName";
             this.cmbInstructor.ValueMember = "UserId";
+            this.cmbInstructor.Font = new Font("Segoe UI", 10);
+            this.cmbInstructor.FlatStyle = FlatStyle.Flat;
 
             // Is Active
             this.chkIsActive.Text = "Khóa học hoạt động";
-            this.chkIsActive.Location = new Point(130, 270);
-            this.chkIsActive.Size = new Size(200, 23);
+            this.chkIsActive.Location = new Point(150, 270);
+            this.chkIsActive.Size = new Size(200, 25);
+            this.chkIsActive.Font = new Font("Segoe UI", 10);
 
-            // Buttons
+            // Buttons Panel
+            var buttonPanel = new Panel
+            {
+                Height = 60,
+                Dock = DockStyle.Bottom,
+                BackColor = Color.FromArgb(240, 240, 240)
+            };
+
             this.btnSave.Text = "Lưu";
-            this.btnSave.Location = new Point(350, 350);
-            this.btnSave.Size = new Size(75, 30);
-            this.btnSave.BackColor = Color.Green;
+            this.btnSave.Location = new Point(380, 15);
+            this.btnSave.Size = new Size(100, 35);
+            this.btnSave.BackColor = Color.FromArgb(0, 120, 215);
             this.btnSave.ForeColor = Color.White;
+            this.btnSave.FlatStyle = FlatStyle.Flat;
+            this.btnSave.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            this.btnSave.Cursor = Cursors.Hand;
             this.btnSave.Click += BtnSave_Click;
 
             this.btnCancel.Text = "Hủy";
-            this.btnCancel.Location = new Point(435, 350);
-            this.btnCancel.Size = new Size(75, 30);
-            this.btnCancel.BackColor = Color.Gray;
+            this.btnCancel.Location = new Point(490, 15);
+            this.btnCancel.Size = new Size(100, 35);
+            this.btnCancel.BackColor = Color.FromArgb(96, 125, 139);
             this.btnCancel.ForeColor = Color.White;
+            this.btnCancel.FlatStyle = FlatStyle.Flat;
+            this.btnCancel.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            this.btnCancel.Cursor = Cursors.Hand;
             this.btnCancel.Click += BtnCancel_Click;
 
-            // Add controls
-            this.Controls.Add(lblTitle);
-            this.Controls.Add(this.txtTitle);
-            this.Controls.Add(lblDescription);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(lblInstructor);
-            this.Controls.Add(this.cmbInstructor);
-            this.Controls.Add(this.chkIsActive);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnCancel);
+            buttonPanel.Controls.AddRange(new Control[] { this.btnSave, this.btnCancel });
+
+            // Add controls to content panel
+            contentPanel.Controls.AddRange(new Control[] 
+            { 
+                lblTitle, this.txtTitle,
+                lblDescription, this.txtDescription,
+                lblInstructor, this.cmbInstructor,
+                this.chkIsActive
+            });
+
+            // Add panels to form
+            this.Controls.AddRange(new Control[] { contentPanel, buttonPanel });
 
             this.ResumeLayout(false);
         }

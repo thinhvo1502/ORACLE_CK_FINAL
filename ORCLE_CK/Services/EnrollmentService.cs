@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ORCLE_CK.Services
 {
@@ -66,7 +67,7 @@ namespace ORCLE_CK.Services
                 {
                     return false;
                 }
-
+                MessageBox.Show(studentId.ToString() + courseId.ToString());
                 var enrollment = new Enrollment
                 {
                     UserId = studentId,

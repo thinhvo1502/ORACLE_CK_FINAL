@@ -64,8 +64,9 @@ namespace ORCLE_CK.Forms
             this.listViewStudents.GridLines = true;
             this.listViewStudents.MultiSelect = false;
 
-            this.listViewStudents.Columns.Add("Họ tên", 400);
-            this.listViewStudents.Columns.Add("Email", 300);
+            this.listViewStudents.Columns.Add("Họ tên", 300);
+            this.listViewStudents.Columns.Add("Email", 250);
+            this.listViewStudents.Columns.Add("Số điện thoại", 150);
 
             // Status Strip
             this.statusStrip.Items.Add(this.statusLabel);

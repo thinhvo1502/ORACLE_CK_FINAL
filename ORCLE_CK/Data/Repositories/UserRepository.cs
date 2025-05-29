@@ -23,6 +23,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"SELECT user_id, full_name, username, email, role, created_at, 
                                   last_login_at, is_active FROM Users ORDER BY created_at DESC";
@@ -53,6 +54,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"SELECT user_id, full_name, username, email, role, created_at, 
                                   last_login_at, is_active FROM Users WHERE user_id = :userId";
@@ -87,7 +89,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
+                    DatabaseConnection.setUp(connection);
                     string sql = @"SELECT user_id, full_name, username, email, password, role, 
                                   created_at, last_login_at, is_active 
                                   FROM Users WHERE username = :username AND is_active = 1";
@@ -124,7 +126,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
+                    DatabaseConnection.setUp(connection);
                     string sql = @"SELECT user_id, full_name, username, email, role, created_at, 
                                   last_login_at, is_active FROM Users WHERE email = :email";
 
@@ -158,6 +160,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"INSERT INTO Users (full_name, username, email, password, role, is_active) 
                                   VALUES (:fullName, :username, :email, :password, :role, 1)";
@@ -190,6 +193,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = @"UPDATE Users SET full_name = :fullName, username = :username, 
                                   email = :email, role = :role, is_active = :isActive 
@@ -224,6 +228,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     // Soft delete - set is_active to 0
                     string sql = "UPDATE Users SET is_active = 0 WHERE user_id = :userId";
@@ -270,6 +275,24 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    //using (OracleCommand cmd = connection.CreateCommand())
+                    //{
+                    //    // Gán CLIENT_IDENTIFIER
+                    //    cmd.CommandText = "BEGIN DBMS_SESSION.SET_IDENTIFIER(:id); END;";
+                    //    cmd.Parameters.Add("id", OracleDbType.Int32).Value = userId;
+                    //    cmd.ExecuteNonQuery();
+
+                    //    // Kiểm tra lại trong cùng session
+                    //    cmd.Parameters.Clear();
+                    //    cmd.CommandText = "SELECT SYS_CONTEXT('USERENV', 'CLIENT_IDENTIFIER') FROM dual";
+
+                    //    var result = cmd.ExecuteScalar();
+                    //    MessageBox.Show("CLIENT_IDENTIFIER = " + result?.ToString());
+                    //}
+                    MessageBox.Show("hahaaa");
+                    DatabaseConnection.setId(userId);
+                    DatabaseConnection.setUp(connection);
+                    
 
                     string sql = "UPDATE Users SET last_login_at = SYSDATE WHERE user_id = :userId";
                     //MessageBox.Show("haha");
@@ -298,7 +321,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
+                    DatabaseConnection.setUp(connection);
                     string sql = "UPDATE Users SET password = :password WHERE user_id = :userId";
 
                     using (var command = new OracleCommand(sql, connection))
@@ -328,7 +351,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
-
+                    DatabaseConnection.setUp(connection);
                     string sql = @"SELECT user_id, full_name, username, email, role, created_at, 
                           last_login_at, is_active FROM Users 
                           WHERE role = :role AND is_active = 1 ORDER BY full_name";
@@ -363,6 +386,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = "SELECT COUNT(*) FROM Users WHERE username = :username";
 
@@ -389,6 +413,7 @@ namespace ORCLE_CK.Data.Repositories
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     connection.Open();
+                    DatabaseConnection.setUp(connection);
 
                     string sql = "SELECT COUNT(*) FROM Users WHERE email = :email";
 
